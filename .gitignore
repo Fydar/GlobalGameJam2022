@@ -1,0 +1,52 @@
+src/GlobalGameJam2022Unity/[Ll]ibrary/
+src/GlobalGameJam2022Unity/[Tt]emp/
+src/GlobalGameJam2022Unity/[Bb]in/
+src/GlobalGameJam2022Unity/[Oo]bj/
+src/GlobalGameJam2022Unity/[Bb]uild/
+src/GlobalGameJam2022Unity/[Bb]uilds/
+src/GlobalGameJam2022Unity/[Ll]ogs/
+src/GlobalGameJam2022Unity/[Uu]ser[Ss]ettings/
+src/GlobalGameJam2022Unity/[Mm]emoryCaptures/
+
+!src/GlobalGameJam2022Unity/[Aa]ssets/**/*.meta
+!src/GlobalGameJam2022Unity/[Aa]ssets/!*.obj
+src/GlobalGameJam2022Unity/[Aa]ssets/Plugins/Editor/JetBrains*
+src/GlobalGameJam2022Unity/[Aa]ssets/AssetStoreTools*
+src/GlobalGameJam2022Unity/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+src/GlobalGameJam2022Unity/[Aa]ssets/[Ss]treamingAssets/aa.meta
+src/GlobalGameJam2022Unity/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+
+# Crashlytics generated file
+crashlytics-build.properties
