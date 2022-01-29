@@ -138,7 +138,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1149365025
 Transform:
@@ -231,17 +231,17 @@ PrefabInstance:
     - target: {fileID: 1604621855067678090, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1.05e-43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1604621855067678090, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 4.2105167e-11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1604621855067678090, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 12.000047
+      value: 4.67e-43
       objectReference: {fileID: 0}
     - target: {fileID: 1613012124848829850, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
@@ -336,22 +336,22 @@ PrefabInstance:
     - target: {fileID: 2250464341100130873, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: 1.8164351e+31
       objectReference: {fileID: 0}
     - target: {fileID: 2250464341100130873, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0
+      value: 7.737664e+34
       objectReference: {fileID: 0}
     - target: {fileID: 2250464341100130873, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.1e-44
+      value: 4.4625514e+30
       objectReference: {fileID: 0}
     - target: {fileID: 2250464341100130873, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 7.556315e+31
       objectReference: {fileID: 0}
     - target: {fileID: 2492657709961055638, guid: 8e348a0533aa0b040973b9c704d9a109,
         type: 3}

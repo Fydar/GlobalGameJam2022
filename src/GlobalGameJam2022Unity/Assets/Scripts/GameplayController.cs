@@ -7,13 +7,9 @@ public class GameplayController : MonoBehaviour
 {
 	[Header("Managers")]
 	[SerializeField] private DialogueManager Dialogue;
+	[SerializeField] private VillagePlayerController Player;
 
 	[Header("Transitions")]
-	[SerializeField] private TransitionBase TransitionFromSplashscreen;
-	[SerializeField] private float TransitionFromSplashscreenSpeed;
-
-
-	[Space]
 	[SerializeField] private TransitionBase TransitionAfterKilling;
 	[SerializeField] private float TransitionAfterKillingSpeed;
 
@@ -32,32 +28,25 @@ public class GameplayController : MonoBehaviour
 	[Header("Dialogue")]
 	public DialogueTranscript IntroductionSequence;
 
+	private void Awake()
+	{
+		Player.gameObject.SetActive(false);
+	}
+
 	private void Start()
 	{
-		TransitionFromSplashscreen.SetTime(1.0f);
 		StartCoroutine(GameplayLoop());
 	}
 
 	private IEnumerator GameplayLoop()
 	{
+		TransitionFromNighttime.SetTime(1.0f);
+
 		var loadedDaytime = SceneManager.LoadScene(DaytimeSceneId, new LoadSceneParameters(LoadSceneMode.Additive));
 		var loadedNighttime = SceneManager.LoadScene(NighttimeSceneId, new LoadSceneParameters(LoadSceneMode.Additive));
 
 		SetActiveInScene(loadedDaytime, true);
 		SetActiveInScene(loadedNighttime, false);
-
-		foreach (float time in new TimedLoop(TransitionFromSplashscreenSpeed))
-		{
-			TransitionFromSplashscreen.SetTime(1.0f - time);
-			yield return null;
-		}
-
-		yield return new WaitForSeconds(2.5f);
-
-		if (IntroductionSequence != null)
-		{
-			yield return StartCoroutine(Dialogue.DialogueRoutine(IntroductionSequence));
-		}
 
 		int dayNumber = 0;
 		while (true)
@@ -67,6 +56,29 @@ public class GameplayController : MonoBehaviour
 			// # Daytime
 			SetActiveInScene(loadedDaytime, true);
 			SetActiveInScene(loadedNighttime, false);
+
+			// ## Setup new day
+			Player.transform.SetParent(null);
+			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedDaytime);
+			SceneManager.MoveGameObjectToScene(gameObject, loadedDaytime);
+			yield return null;
+			Player.gameObject.SetActive(true);
+
+			foreach (float time in new TimedLoop(TransitionFromNighttimeSpeed))
+			{
+				TransitionFromNighttime.SetTime(1.0f - time);
+				yield return null;
+			}
+
+			if (dayNumber == 1)
+			{
+				yield return new WaitForSeconds(2.5f);
+
+				if (IntroductionSequence != null)
+				{
+					yield return StartCoroutine(Dialogue.DialogueRoutine(IntroductionSequence));
+				}
+			}
 
 			// ## Bountyboard Sequence
 			while (true)
@@ -100,6 +112,12 @@ public class GameplayController : MonoBehaviour
 			// ## Nighttime Gameplay
 			while (true)
 			{
+				yield return null;
+			}
+
+			foreach (float time in new TimedLoop(TransitionFromNighttimeSpeed))
+			{
+				TransitionFromNighttime.SetTime(time);
 				yield return null;
 			}
 		}
