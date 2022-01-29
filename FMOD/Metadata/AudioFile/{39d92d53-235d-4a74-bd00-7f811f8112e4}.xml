@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{39d92d53-235d-4a74-bd00-7f811f8112e4}">
+		<property name="assetPath">
+			<value>Footstep-dirt5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.58514739229024948</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f6990094-beee-4935-a48f-06e206d4ccb4}</destination>
+		</relationship>
+	</object>
+</objects>

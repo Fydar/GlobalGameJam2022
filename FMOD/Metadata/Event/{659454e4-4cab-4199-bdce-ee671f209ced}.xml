@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{659454e4-4cab-4199-bdce-ee671f209ced}">
+		<property name="color">
+			<value>Red</value>
+		</property>
 		<property name="name">
 			<value>Bloodlust</value>
 		</property>
@@ -275,7 +278,6 @@
 		<property name="length">
 			<value>3.6986394557823128</value>
 		</property>
-		<property name="name" />
 		<relationship name="audioFile">
 			<destination>{eeb4058f-75f4-43b0-8cc2-0f920e16d948}</destination>
 		</relationship>
@@ -542,7 +544,6 @@
 		<property name="length">
 			<value>26.301369863013697</value>
 		</property>
-		<property name="name" />
 		<relationship name="timeline">
 			<destination>{3ea4950f-403e-4f4e-ab0b-f93005d66c8c}</destination>
 		</relationship>

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3877692631461297649}
   - component: {fileID: 2555726215864146744}
   m_Layer: 0
-  m_Name: InGameMusic
+  m_Name: FMODEventEmitter-InGameMusic(startOnEnable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

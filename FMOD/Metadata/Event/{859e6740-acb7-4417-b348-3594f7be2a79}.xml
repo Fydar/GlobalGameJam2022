@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{859e6740-acb7-4417-b348-3594f7be2a79}">
+		<property name="color">
+			<value>Green</value>
+		</property>
 		<property name="name">
 			<value>DayNight</value>
 		</property>
@@ -69,7 +72,7 @@
 			<destination>{b8396591-eb77-403e-af28-b01d08fc99b9}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{a702d541-6592-421d-b3f1-3732a5592e15}</destination>
+			<destination>{9e6ead0a-535b-4de4-8e32-7a73442a48c7}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{9d3cb608-6625-46c2-9d95-20376b48b44a}" />
@@ -247,7 +250,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{e454c31f-63cc-4117-b33e-6caedf2ada8a}">
 		<property name="volume">
-			<value>-9</value>
+			<value>-10.5</value>
 		</property>
 		<property name="name">
 			<value>Music</value>
