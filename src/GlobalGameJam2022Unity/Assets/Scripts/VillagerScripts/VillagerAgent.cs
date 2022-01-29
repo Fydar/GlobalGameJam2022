@@ -17,6 +17,8 @@ public class VillagerAgent : MonoBehaviour
 
     public NavMeshAgent navAI;
 
+    Vector3 storedPos;
+
     private void Awake()
     {
         idle = gameObject.GetComponent<IdleState>();
@@ -32,6 +34,8 @@ public class VillagerAgent : MonoBehaviour
         states = new StateMachine(idle, this);
         //states.ChangeState(GetComponent<DialogueState>());
         isTalking = true;
+
+        storedPos = transform.position;
        
     }
 
@@ -47,6 +51,13 @@ public class VillagerAgent : MonoBehaviour
         }
         */
         
+    }
+
+    public void dayReset()
+    {
+        transform.position = storedPos;
+        navAI.destination = transform.position;
+        states.ChangeState(idle);
     }
 }
 
