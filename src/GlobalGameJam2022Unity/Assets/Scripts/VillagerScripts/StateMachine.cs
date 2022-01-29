@@ -79,6 +79,7 @@ public class RunState : IState
     public void StateExecute()
     {
         Debug.Log("Updating...");
+        villager.transform.position += new Vector3(2.0f, 0.0f, 0.0f) * Time.deltaTime;
         
     }
     public void StateExit()

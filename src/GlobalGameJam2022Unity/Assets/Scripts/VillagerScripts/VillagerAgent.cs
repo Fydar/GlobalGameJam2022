@@ -16,7 +16,7 @@ public class VillagerAgent : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        states.ChangeState(new IdleState(this));
+        states.ChangeState(new RunState(this));
     }
 
     // Update is called once per frame
