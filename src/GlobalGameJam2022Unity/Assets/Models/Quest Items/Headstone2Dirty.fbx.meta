@@ -1,49 +1,9 @@
 fileFormatVersion: 2
-guid: f121b61c905e39c459527daa84cb9e63
+guid: 4cf3b04a66ac88548bb5896caaa0400d
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brass
-    second: {fileID: 2100000, guid: 91c48114d493c9047be78034fc12042b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: brick
-    second: {fileID: 2100000, guid: 570a5198ab1f99645ae515dd4af029cf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: glass
-    second: {fileID: 2100000, guid: 3d541cf3453a43b4cbca8cf0aaa1f7d2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: grouting
-    second: {fileID: 2100000, guid: 37d3fc02e084c4d44aa7bbec07ff7498, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: plaster
-    second: {fileID: 2100000, guid: 219f373bfde21134cbc159729e58deef, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: roof
-    second: {fileID: 2100000, guid: b05f7f87c21786e4a9a2fa12c6341557, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: stone
-    second: {fileID: 2100000, guid: 4c02307712f9a7940b53d2a1ffbe3fb9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: wood
-    second: {fileID: 2100000, guid: b177d679adc45884bbabfc3acc654bd9, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -75,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 4
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -128,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.04
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
