@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{3efd2b9d-0e8c-4ec9-b4d4-22c404d6e2e3}">
+		<property name="name">
+			<value>Bloodlust</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ce7af6be-4f55-4b14-b0b5-5b813d7933a9}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c49c5e5c-a62b-41e6-9db3-ba82199959be}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c49c5e5c-a62b-41e6-9db3-ba82199959be}">
+		<property name="minimum">
+			<value>-1</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>-1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
