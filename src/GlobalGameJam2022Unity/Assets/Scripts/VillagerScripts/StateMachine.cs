@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.AI;
 
 //State machine.
 
 //States: Idle, Run.
 public interface IState
 {
+    //Enter, Execute and exit the states.
     public void StateEnter();
     public void StateExecute();
     public void StateExit();
 
 }
 
-public class StateMachine : MonoBehaviour
+public class StateMachine 
 {
 
     IState CurrentState;
@@ -35,55 +36,5 @@ public class StateMachine : MonoBehaviour
         {
             CurrentState.StateExecute();
         }
-    }
-}
-
-public class IdleState : IState
-{
-    VillagerAgent villager;
-
-    public IdleState(VillagerAgent villager)
-    {
-        this.villager = villager;
-    }
-
-    public void StateEnter()
-    {
-        Debug.Log("Entering...");
-    }
-    public void StateExecute()
-    {
-        Debug.Log("Updating...");
-        
-
-    }
-    public void StateExit()
-    {
-        Debug.Log("Exiting...");
-    }
-}
-
-public class RunState : IState
-{
-    VillagerAgent villager;
-
-    public RunState(VillagerAgent villager)
-    {
-        this.villager = villager;
-    }
-
-    public void StateEnter()
-    {
-        Debug.Log("Entering...");
-    }
-    public void StateExecute()
-    {
-        Debug.Log("Updating...");
-        villager.transform.position += new Vector3(2.0f, 0.0f, 0.0f) * Time.deltaTime;
-        
-    }
-    public void StateExit()
-    {
-        Debug.Log("Exiting...");
     }
 }
