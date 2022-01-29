@@ -5,28 +5,25 @@ using UnityEngine;
 public class VillagerAgent : MonoBehaviour
 {
 
-    public Vector3 velocity;
-    public float mass;
-    public float maxSpeed;
-    public float maxForce;
-
-    AIWander wander;
-
+    StateMachine states = new StateMachine();
+    public float moveSpeed = 2.0f;
 
     private void Awake()
     {
-        wander = gameObject.GetComponent<AIWander>();
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        states.ChangeState(new IdleState(this));
     }
 
     // Update is called once per frame
     void Update()
     {
-        wander.steerCalc();
+        states.StateUpdate();
     }
 }
+
+
