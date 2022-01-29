@@ -54,15 +54,17 @@ public class GameplayController : MonoBehaviour
 			dayNumber++;
 
 			// # Daytime
-			SetActiveInScene(loadedDaytime, true);
-			SetActiveInScene(loadedNighttime, false);
 
 			// ## Setup new day
+			yield return null;
+
 			Player.transform.SetParent(null);
 			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedDaytime);
 			SceneManager.MoveGameObjectToScene(gameObject, loadedDaytime);
-			yield return null;
 			Player.gameObject.SetActive(true);
+
+			SetActiveInScene(loadedDaytime, true);
+			SetActiveInScene(loadedNighttime, false);
 
 			foreach (float time in new TimedLoop(TransitionFromNighttimeSpeed))
 			{
