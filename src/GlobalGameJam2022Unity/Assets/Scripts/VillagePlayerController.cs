@@ -5,6 +5,9 @@ public class VillagePlayerController : MonoBehaviour
 {
 	private VillageCharacterController villageCharacterController;
 
+	public VillageNPC killedCharacter;
+	public bool IsBloodlusted = false;
+
 	private void Awake()
 	{
 		villageCharacterController = GetComponent<VillageCharacterController>();

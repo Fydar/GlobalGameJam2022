@@ -11,6 +11,8 @@ public class VillageCharacterController : MonoBehaviour
 		Path
 	}
 
+	public CharacterTemplate Character;
+
 	[SerializeField]
 	private Animator animator;
 
@@ -49,6 +51,7 @@ public class VillageCharacterController : MonoBehaviour
 						agent.isStopped = true;
 					}
 				}
+				movementMode = MovementMode.Idle;
 				break;
 			}
 			case MovementMode.Path:

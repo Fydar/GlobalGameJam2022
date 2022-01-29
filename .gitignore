@@ -71,3 +71,4 @@ crashlytics-build.properties
 # Log files can be ignored.
 fmod_editor.log
 src/GlobalGameJam2022Unity/Assets/Plugins/FMOD/Cache/
+.cache
