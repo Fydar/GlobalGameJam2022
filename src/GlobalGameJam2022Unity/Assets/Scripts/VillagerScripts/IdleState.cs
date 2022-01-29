@@ -27,11 +27,9 @@ public class IdleState : MonoBehaviour, IState
             var newPosition = movPosTrans[Random.Range(0, movPosTrans.Count)];
             villager.navAI.destination = newPosition.position;
 
-            Debug.Log(newPosition);
 
             while (Vector3.Distance(transform.position, villager.navAI.destination) > 0.8f)
             {
-                Debug.Log(Vector3.Distance(transform.position, villager.navAI.destination));
                 yield return null;
             }
             
