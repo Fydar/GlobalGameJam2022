@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd0afea9a36a4e44bef1211f5aeb408, type: 3}
+  m_Name: TabPageResources
+  m_EditorClassIdentifier: 
+  TabManagerIcon: {fileID: 2800000, guid: b77922903793cd74691c6490d1772900, type: 3}
+  TabPageIcon: {fileID: 2800000, guid: 1ae1f2fad84cf44469f1d6ec53c71ce2, type: 3}
+  DefaultTabPageIcon: {fileID: 2800000, guid: 71ba179aa87c5e84ba21f0eff5086900, type: 3}
+  AppearIcon: {fileID: 2800000, guid: d4f2008dde47ce341b54bdbc364b8701, type: 3}
+  FadeIcon: {fileID: 2800000, guid: 16f9e471ab00bdd4a8b1e104f5cfe946, type: 3}
+  GrowIcon: {fileID: 2800000, guid: 6c0a790e0754e874fa40d518803246f3, type: 3}
+  ShinkIcon: {fileID: 2800000, guid: 6c0a790e0754e874fa40d518803246f3, type: 3}

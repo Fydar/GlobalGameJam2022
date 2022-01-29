@@ -39,11 +39,11 @@ namespace GlobalGameJam2022
 			int append = 0;
 			while (File.Exists(path + ".png"))
 			{
-				path = basicFile + " " + append.ToString();
+				path = $"{basicFile} {append}";
 				append++;
 			}
 
-			ScreenCapture.CaptureScreenshot(path + ".png");
+			ScreenCapture.CaptureScreenshot($"{path}.png");
 		}
 
 		public static void OpenScreenshotsFolder()

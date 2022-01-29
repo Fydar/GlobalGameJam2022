@@ -59,11 +59,6 @@ namespace GlobalGameJam2022
 			set => time = duration * value;
 		}
 
-		private TimedLoop GetEnumerator()
-		{
-			return this;
-		}
-
 		IEnumerator<float> IEnumerable<float>.GetEnumerator()
 		{
 			return this;
