@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
+  m_Name: IntroductionDialogue
+  m_EditorClassIdentifier: 
+  Content:
+  - Body: Hay there dearie, would you be able to help me?
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+  - Body: Well hi there old lady. What can I do to help?
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+  - Body: I struggle to water my plants. It would be nice if someone could water
+      them for me.
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
