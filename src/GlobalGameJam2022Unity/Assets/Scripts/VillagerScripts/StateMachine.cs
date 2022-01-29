@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.AI;
 
 //State machine.
@@ -8,9 +9,7 @@ using UnityEngine.AI;
 public interface IState
 {
     //Enter, Execute and exit the states.
-    public void StateEnter();
-    public void StateExecute();
-    public void StateExit();
+    public IEnumerator DoState();
 
 }
 
@@ -18,23 +17,28 @@ public class StateMachine
 {
 
     IState CurrentState;
+    VillagerAgent villager;
+
+    Coroutine coroutine;
+
+    public StateMachine(IState currentState, VillagerAgent villager)
+    {
+        CurrentState = currentState;
+        this.villager = villager;
+
+        ChangeState(currentState);
+    }
 
     public void ChangeState(IState NewState)
     {
-        if (CurrentState != null)
+        if (coroutine != null)
         {
-            CurrentState.StateExit();
+            villager.StopCoroutine(coroutine);
+            coroutine = null;
         }
+        coroutine = villager.StartCoroutine(CurrentState.DoState());
 
-        CurrentState = NewState;
-        CurrentState.StateEnter();
+        
     }
 
-    public void StateUpdate()
-    {
-        if (CurrentState != null)
-        {
-            CurrentState.StateExecute();
-        }
-    }
 }

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class IdleState : MonoBehaviour, IState
 {
@@ -8,27 +10,37 @@ public class IdleState : MonoBehaviour, IState
     public float navRange = 10.0f;
 
     [SerializeField]
-    private Transform movPosTrans;
+    private List<Transform> movPosTrans = new List<Transform>();
 
-    private void Start()
+    private void Awake()
     {
         villager = GetComponent<VillagerAgent>();
     }
 
-    public void StateEnter()
+
+    public IEnumerator DoState()
     {
-        
-    }
-    public void StateExecute()
-    {
+        while(true)
+        {
+
+
+            var newPosition = movPosTrans[Random.Range(0, movPosTrans.Count)];
+            villager.navAI.destination = newPosition.position;
+
+            Debug.Log(newPosition);
+
+            while (Vector3.Distance(transform.position, villager.navAI.destination) > 0.8f)
+            {
+                Debug.Log(Vector3.Distance(transform.position, villager.navAI.destination));
+                yield return null;
+            }
+            
+            yield return new WaitForSeconds(3.0f);
+        }
 
         
 
-    }
-    public void StateExit()
-    {
-        
+
     }
 
-   
 }

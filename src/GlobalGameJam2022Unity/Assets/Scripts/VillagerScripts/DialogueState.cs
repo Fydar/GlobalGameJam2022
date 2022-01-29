@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 //Needs nothing, used for when player is talking to villager.
 public class DialogueState : MonoBehaviour, IState
 {
@@ -10,16 +12,11 @@ public class DialogueState : MonoBehaviour, IState
     }
 
 
-    public void StateEnter()
-    {
 
-    }
-    public void StateExecute()
+    public IEnumerator DoState()
     {
         
-    }
-    public void StateExit()
-    {
-        
+        yield return null;
+
     }
 }
