@@ -1,16 +1,16 @@
+using Cinemachine;
 using FMODUnity;
 using GlobalGameJam2022;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.Rendering.DebugUI;
 
 public class GameplayController : MonoBehaviour
 {
 	[Header("Managers")]
 	[SerializeField] private DialogueManager Dialogue;
-	[SerializeField] private VillagePlayerController Player;
+	[SerializeField] private VillagePlayerEngine Player;
 
 	[Header("Transitions")]
 	[SerializeField] private TransitionBase TransitionAfterKilling;
@@ -25,10 +25,15 @@ public class GameplayController : MonoBehaviour
 	[SerializeField] private float TransitionFromNighttimeSpeed;
 
 	[Header("Scenes")]
-	public string DaytimeSceneId = "DaytimeVillage";
-	public string NighttimeSceneId = "NighttimeVillage";
+	public string VillageEnvironmentDaySceneId = "Village_Environment_Day";
+	public string VillageEnvironmentNightSceneId = "Village_Environment_Night";
+	public string VillageVillagersSceneId = "Village_Villagers";
 
 	[Header("Dialogue")]
+	public CinemachineVirtualCamera DialogueCamera;
+	public DialogueTarget DialogueTarget;
+
+	[Space]
 	public DialogueTranscript IntroductionSequence;
 
 	[Space]
@@ -62,15 +67,23 @@ public class GameplayController : MonoBehaviour
 	{
 		TransitionFromNighttime.SetTime(1.0f);
 
-		var loadedDaytime = SceneManager.LoadScene(DaytimeSceneId, new LoadSceneParameters(LoadSceneMode.Additive));
-		var loadedNighttime = SceneManager.LoadScene(NighttimeSceneId, new LoadSceneParameters(LoadSceneMode.Additive));
+		var loadedEnvironmentDay = SceneManager.LoadScene(VillageEnvironmentDaySceneId, new LoadSceneParameters(LoadSceneMode.Additive));
+		var loadedEnvironmentNight = SceneManager.LoadScene(VillageEnvironmentNightSceneId, new LoadSceneParameters(LoadSceneMode.Additive));
+		var loadedVillagers = SceneManager.LoadScene(VillageVillagersSceneId, new LoadSceneParameters(LoadSceneMode.Additive));
 
-		var aliveCharacters = new List<VillageNPC>();
-		aliveCharacters.AddRange(FindObjectsOfType<VillageNPC>(true));
+		yield return null;
 
-		SetActiveInScene(loadedDaytime, true);
-		SetActiveInScene(loadedNighttime, false);
+		// Move the villagers to the day scene.
+		foreach (var villager in loadedVillagers.GetRootGameObjects())
+		{
+			SceneManager.MoveGameObjectToScene(villager, loadedEnvironmentDay);
+		}
 
+		SetActiveInScene(loadedEnvironmentDay, true);
+		SetActiveInScene(loadedEnvironmentNight, false);
+
+		var aliveCharacters = new List<VillageNPCEngine>();
+		aliveCharacters.AddRange(FindObjectsOfType<VillageNPCEngine>(true));
 
 		int dayNumber = 0;
 		while (true)
@@ -80,15 +93,13 @@ public class GameplayController : MonoBehaviour
 			// # Daytime
 
 			// ## Setup new day
-			yield return null;
-
 			Player.transform.SetParent(null);
-			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedDaytime);
-			SceneManager.MoveGameObjectToScene(gameObject, loadedDaytime);
+			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedEnvironmentDay);
+			SceneManager.MoveGameObjectToScene(gameObject, loadedEnvironmentDay);
 			Player.gameObject.SetActive(true);
 
-			SetActiveInScene(loadedDaytime, true);
-			SetActiveInScene(loadedNighttime, false);
+			SetActiveInScene(loadedEnvironmentDay, true);
+			SetActiveInScene(loadedEnvironmentNight, false);
 
 			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", -1);
 			RuntimeManager.StudioSystem.setParameterByName("TimeOfDay", 0);
@@ -102,7 +113,7 @@ public class GameplayController : MonoBehaviour
 			if (dayNumber == 1)
 			{
 				Player.enabled = false;
-				yield return new WaitForSeconds(2.5f);
+				// yield return new WaitForSeconds(2.5f);
 
 				if (IntroductionSequence != null)
 				{
@@ -125,14 +136,38 @@ public class GameplayController : MonoBehaviour
 			Player.enabled = true;
 
 
+			VillageNPCEngine killedCharacter = null;
 			float timeUntilBloodlust = Random.Range(TimeUntilBloodlustMinimum, TimeUntilBloodlustMaximum);
 
 			// ## Daytime Gameplay
 			while (true)
 			{
+				Player.activatedInteractable = null;
 				yield return null;
 
 				timeUntilBloodlust -= Time.deltaTime;
+
+				if (Player.activatedInteractable is VillageNPCInteractable npcToTalkTo)
+				{
+					// Talk to a character
+					Player.enabled = false;
+					DialogueCamera.gameObject.SetActive(true);
+					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.GetComponent<DialogueState>());
+
+					DialogueTarget.SetTargets(new Transform[] { npcToTalkTo.Engine.Character.transform },
+						npcToTalkTo.transform.position.x < Player.Character.transform.position.x ? DialogueSide.Left : DialogueSide.Right);
+
+					DialogueCamera.LookAt = npcToTalkTo.Engine.Character.transform;
+
+					yield return StartCoroutine(
+						Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DefaultDialogue[
+							Random.Range(0, npcToTalkTo.Engine.Character.Personality.DefaultDialogue.Length)]));
+
+					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.DefaultState);
+					DialogueCamera.gameObject.SetActive(false);
+					Player.enabled = true;
+				}
+				Player.activatedInteractable = null;
 
 				if (timeUntilBloodlust <= 0.0f)
 				{
@@ -140,11 +175,17 @@ public class GameplayController : MonoBehaviour
 
 					Player.enabled = false;
 
+					foreach (var npc in aliveCharacters)
+					{
+						npc.Effects.PlayExclamation();
+					}
+
 					yield return new WaitForSeconds(0.1f);
 
 					if (dayNumber == 1)
 					{
-						yield return StartCoroutine(Dialogue.DialogueRoutine(IntroductionSequence));
+						yield return StartCoroutine(
+							Dialogue.DialogueRoutine(IntroductionSequence));
 					}
 					else
 					{
@@ -153,28 +194,43 @@ public class GameplayController : MonoBehaviour
 								AlternateBloodlustSequences[Random.Range(0, AlternateBloodlustSequences.Length)]));
 					}
 
+					Player.enabled = true;
 					RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 1);
 
 					foreach (var npc in aliveCharacters)
 					{
-						// npc.RunFrom(Player);
+						var fleeState = npc.GetComponent<FleeState>();
+						if (fleeState != null)
+						{
+							fleeState.RunState(Player.transform);
+						}
 					}
 
-					Player.killedCharacter = null;
+					Player.activatedInteractable = null;
 					Player.IsBloodlusted = true;
+					Player.enabled = true;
 
-					while (Player.killedCharacter == null)
+					// wait until a player has killed a character
+					// TODO: Add loose state if no characters are killed
+					while (true)
 					{
+						if (Player.activatedInteractable is VillageNPCInteractable interactableNpc)
+						{
+							killedCharacter = interactableNpc.Engine;
+							break;
+						}
 						yield return null;
 					}
 					break;
 				}
 			}
 
+			Player.enabled = false;
 			Player.IsBloodlusted = false;
-			KillSequence.CharacterGraphic = Player.killedCharacter.GetComponent<VillageCharacterController>().Character.DialogueGraphic;
+			KillSequence.CharacterGraphic.sprite = killedCharacter.Character.Personality.DialogueGraphic;
 			KillSequence.gameObject.SetActive(true);
 			yield return new WaitForSeconds(5.0f);
+			KillSequence.gameObject.SetActive(false);
 
 			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 2);
 
@@ -184,19 +240,22 @@ public class GameplayController : MonoBehaviour
 				yield return null;
 			}
 
+			TransitionAfterKilling.SetTime(0.0f);
+			TransitionFromDaytime.SetTime(1.0f);
+
+			aliveCharacters.Remove(killedCharacter);
+			killedCharacter.gameObject.SetActive(false);
+
 			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", -1);
 
 			// # Nighttime
 			Player.transform.SetParent(null);
-			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedNighttime);
-			SceneManager.MoveGameObjectToScene(gameObject, loadedNighttime);
+			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedEnvironmentNight);
+			SceneManager.MoveGameObjectToScene(gameObject, loadedEnvironmentNight);
 			Player.gameObject.SetActive(true);
 
-			SetActiveInScene(loadedDaytime, false);
-			SetActiveInScene(loadedNighttime, true);
-
-			TransitionAfterKilling.SetTime(0.0f);
-			TransitionFromDaytime.SetTime(1.0f);
+			SetActiveInScene(loadedEnvironmentDay, false);
+			SetActiveInScene(loadedEnvironmentNight, true);
 
 			RuntimeManager.StudioSystem.setParameterByName("TimeOfDay", 1);
 
@@ -207,11 +266,14 @@ public class GameplayController : MonoBehaviour
 			}
 
 			// ## Nighttime Introduction
-			if (Player.killedCharacter != null)
+			if (Player.activatedInteractable != null)
 			{
 				while (true)
 				{
-
+					if (Input.GetMouseButtonDown(0))
+					{
+						break;
+					}
 					yield return null;
 				}
 			}
@@ -219,10 +281,11 @@ public class GameplayController : MonoBehaviour
 			Player.enabled = true;
 
 			// ## Nighttime Gameplay
-			while (true)
-			{
-				yield return null;
-			}
+			yield return new WaitForSeconds(Random.Range(TimeUntilSunriseMinimum, TimeUntilSunriseMaximum));
+			// while (true)
+			// {
+			// 	yield return null;
+			// }
 
 			foreach (float time in new TimedLoop(TransitionFromNighttimeSpeed))
 			{
@@ -232,7 +295,7 @@ public class GameplayController : MonoBehaviour
 		}
 	}
 
-	void SetActiveInScene(Scene scene, bool state)
+	private void SetActiveInScene(Scene scene, bool state)
 	{
 		var rootObjects = scene.GetRootGameObjects();
 		for (int i = 0; i < rootObjects.Length; i++)

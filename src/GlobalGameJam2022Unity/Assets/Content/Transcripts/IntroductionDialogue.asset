@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: IntroductionDialogue
   m_EditorClassIdentifier: 
   Content:
-  - Body: Hay there dearie, would you be able to help me?
-    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
-  - Body: Well hi there old lady. What can I do to help?
+  - Body: I'm not feeling so good...
     Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
-  - Body: I struggle to water my plants. It would be nice if someone could water
-      them for me.
-    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 0}
+  - Body: Look at all these people!
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 0}

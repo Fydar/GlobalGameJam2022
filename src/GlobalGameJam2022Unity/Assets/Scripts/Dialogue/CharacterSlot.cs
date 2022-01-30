@@ -11,6 +11,6 @@ public class CharacterSlot
 
 	[Space]
 	[NonSerialized]
-	public CharacterTemplate CurrentTalker;
+	public CharacterPersonality CurrentTalker;
 	public bool Focused;
 }

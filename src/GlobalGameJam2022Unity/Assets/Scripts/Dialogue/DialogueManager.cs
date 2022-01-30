@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
 		SetBars(0.0f);
 	}
 
-	public bool IsCharacterTalking(CharacterTemplate character)
+	public bool IsCharacterTalking(CharacterPersonality character)
 	{
 		foreach (var slot in Slots)
 		{

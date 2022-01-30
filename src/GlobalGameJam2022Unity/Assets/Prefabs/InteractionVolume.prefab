@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7291561965260016674}
-  - component: {fileID: 3339187018355321481}
   - component: {fileID: 274410859}
+  - component: {fileID: 1726939606721321685}
   m_Layer: 0
   m_Name: InteractionVolume
   m_TagString: Untagged
@@ -34,18 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3339187018355321481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7291561965260016673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9d70bc6f1af7fa48ad554d29f71a1b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &274410859
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60,6 +48,18 @@ CapsuleCollider:
   m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1726939606721321685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7291561965260016673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95176baa04fef8e41a92f670eb7d382a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8900019933392681955
 GameObject:
   m_ObjectHideFlags: 0

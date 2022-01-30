@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 125a8973258e5314e80f9a5d051e4cee
   - enabled: 1
-    path: Assets/Scenes/DaytimeScene.unity
+    path: Assets/Scenes/Village_Environment_Day.unity
     guid: e7a58f5055028ca4b813d1db2010230c
   - enabled: 1
-    path: Assets/Scenes/NighttimeScene.unity
+    path: Assets/Scenes/Village_Environment_Night.unity
     guid: abbe2a1fcc30b79498f86b034e6c84e5
+  - enabled: 1
+    path: Assets/Scenes/Village_Villagers.unity
+    guid: c2520a7ff67ed6d45a8151dc29efb8e3
   m_configObjects: {}

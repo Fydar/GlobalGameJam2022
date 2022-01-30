@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
+  m_Name: CowDefault
+  m_EditorClassIdentifier: 
+  Content:
+  - Body: MmmmmooooooooooooooouhhhHhhh!
+    Character: {fileID: 11400000, guid: 4713264b0a8271145afb7076a4786da9, type: 2}
+    Graphic: {fileID: 0}
+  - Body: Oi! Watch it, cow!
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 0}
+  - Body: ...
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 0}
+  - Body: What?!?!?
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 0}
+  - Body: ...
+    Character: {fileID: 11400000, guid: 4713264b0a8271145afb7076a4786da9, type: 2}
+    Graphic: {fileID: 0}
+  - Body: ...
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 0}
