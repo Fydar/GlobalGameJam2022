@@ -14,6 +14,7 @@ public class VillageNPCEngine : MonoBehaviour
 	[SerializeField] public float moveSpeed = 2.0f;
 	[SerializeField] public int happiness;
 	[SerializeField] public bool isTalking;
+	[SerializeField] public bool hasBeenTalkedTo;
 
 	private VillageNPCEngineState currentState;
 	private Coroutine currentStateCoroutine;
@@ -48,6 +49,7 @@ public class VillageNPCEngine : MonoBehaviour
 		if (currentState != null)
 		{
 			currentState.IsActiveState = false;
+			currentState.OnExit();
 
 			if (currentStateCoroutine != null)
 			{
@@ -58,6 +60,7 @@ public class VillageNPCEngine : MonoBehaviour
 
 		currentState = newState;
 		currentState.IsActiveState = true;
+		currentState.OnEnter();
 		currentStateCoroutine = StartCoroutine(newState.DoState());
 	}
 
