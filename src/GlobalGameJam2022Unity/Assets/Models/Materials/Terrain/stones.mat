@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ground
+  m_Name: stones
   m_Shader: {fileID: -6465566751694194690, guid: 63cd18412cca13f4aa10d01887efaad6,
     type: 3}
   m_ShaderKeywords: 
@@ -110,7 +110,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.038144004, g: 0.29799998, b: 0.05944365, a: 1}
+    - _BaseColor: {r: 0.2784314, g: 0.29803923, b: 0.29411766, a: 1}
     - _Color: {r: 0.006569345, g: 0.24619454, b: 0.025979595, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
