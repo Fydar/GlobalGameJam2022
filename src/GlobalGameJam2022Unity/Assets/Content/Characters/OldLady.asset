@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Old Lady
   DialogueGraphic: {fileID: 21300000, guid: cdc0e0616586c494b8280d810d4d59d7, type: 3}
-  Quests: []
-  DefaultDialogue:
-  - {fileID: 11400000, guid: d6de303fee245174c9d76cc2298b838d, type: 2}
-  RegretSpeech: []
+  DayFirstDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  DayDefaultDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  NightDefaultDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  RegretSpeech:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}

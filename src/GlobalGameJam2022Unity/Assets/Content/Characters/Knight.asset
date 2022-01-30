@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Knight
   DialogueGraphic: {fileID: 21300000, guid: 73cc4330c0bc733458a4458f260de52d, type: 3}
-  Quests: []
-  DefaultDialogue: []
-  RegretSpeech: []
+  DayFirstDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  DayDefaultDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  NightDefaultDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  RegretSpeech:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
