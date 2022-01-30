@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc3446c93d538e4dbc6fa1fadf475f8, type: 3}
   m_Name: OldLady
   m_EditorClassIdentifier: 
-  Name: Margret
+  Name: Old Lady
   DialogueGraphic: {fileID: 21300000, guid: cdc0e0616586c494b8280d810d4d59d7, type: 3}
   Quests: []
   DefaultDialogue:

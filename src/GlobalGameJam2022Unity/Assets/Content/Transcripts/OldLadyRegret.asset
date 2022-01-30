@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
-  m_Name: RegretOldLady
+  m_Name: OldLadyRegret
   m_EditorClassIdentifier: 
   Content:
   - Body: WHAT HAVE I DONE!!!!!!!

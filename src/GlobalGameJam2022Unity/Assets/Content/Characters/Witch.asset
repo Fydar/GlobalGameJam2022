@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc3446c93d538e4dbc6fa1fadf475f8, type: 3}
   m_Name: Witch
   m_EditorClassIdentifier: 
-  Name: Margret
+  Name: Witch
   DialogueGraphic: {fileID: 21300000, guid: 8ddacf13a239d054b8d24c318f8aaa69, type: 3}
   Quests: []
   DefaultDialogue:
-  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
-  RegretSpeech:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 4841d5121624f154f8e7af79f23f2670, type: 2}
+  RegretSpeech: []

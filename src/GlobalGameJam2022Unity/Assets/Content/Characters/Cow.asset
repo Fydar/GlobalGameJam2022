@@ -15,5 +15,6 @@ MonoBehaviour:
   Name: Cow
   DialogueGraphic: {fileID: 21300000, guid: 9810ff0c507a59b40afff75cb9223686, type: 3}
   Quests: []
-  DefaultDialogue: []
+  DefaultDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
   RegretSpeech: []
