@@ -108,15 +108,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.2
+    agentRadius: 0.3
     agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.3
+    agentSlope: 55
+    agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.06666667
+    cellSize: 0.1
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -164,26 +164,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1149365025}
     m_Modifications:
-    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: -2.7510489e+26
-      objectReference: {fileID: 0}
-    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.x
-      value: 1.05e-43
-      objectReference: {fileID: 0}
-    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 4.2105167e-11
-      objectReference: {fileID: 0}
-    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.z
-      value: 7.281337e+9
-      objectReference: {fileID: 0}
     - target: {fileID: 7589718120701620272, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
       propertyPath: m_Name
