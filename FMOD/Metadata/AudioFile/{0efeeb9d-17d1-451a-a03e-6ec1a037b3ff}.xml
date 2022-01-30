@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0efeeb9d-17d1-451a-a03e-6ec1a037b3ff}">
+		<property name="assetPath">
+			<value>TheBloodlust_killing.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.7534467120181407</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f6990094-beee-4935-a48f-06e206d4ccb4}</destination>
+		</relationship>
+	</object>
+</objects>
