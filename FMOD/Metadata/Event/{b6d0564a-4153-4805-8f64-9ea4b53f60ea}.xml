@@ -82,7 +82,6 @@
 	<object class="GroupTrack" id="{4257968b-4d7f-484a-914d-1e4d0c36ebfd}">
 		<relationship name="modules">
 			<destination>{158c4cea-3ffa-4f7b-bafb-58b354ce19e2}</destination>
-			<destination>{87bccb2e-500e-460f-b47a-f840544b72a6}</destination>
 			<destination>{63a86e32-33e8-408a-a5c2-417545aecf9d}</destination>
 			<destination>{f8b65e99-7fd7-43be-b813-7fb9e61ff94d}</destination>
 			<destination>{22f95f50-1830-4d4b-8479-7f296d96c62f}</destination>
@@ -91,6 +90,7 @@
 			<destination>{452efe15-518f-4d73-90cd-b6a62dfd5b86}</destination>
 			<destination>{ac16457d-e910-47d7-82a7-2ca6fac83fb2}</destination>
 			<destination>{bbca1fad-7faf-45bd-b4f4-1b2fa6d72384}</destination>
+			<destination>{5c64d142-44a1-4332-9b1d-ca60bf25ed9e}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{4ae71b18-03c4-41cd-a01a-2bfaa1c8675d}</destination>
@@ -99,7 +99,7 @@
 	<object class="Timeline" id="{8414c15f-5f16-4d86-8a5d-65a62ad02420}">
 		<relationship name="modules">
 			<destination>{158c4cea-3ffa-4f7b-bafb-58b354ce19e2}</destination>
-			<destination>{87bccb2e-500e-460f-b47a-f840544b72a6}</destination>
+			<destination>{5c64d142-44a1-4332-9b1d-ca60bf25ed9e}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{e77604e7-d321-435f-ac97-495df4ae93cf}</destination>
@@ -202,20 +202,6 @@
 			<destination>{098d4857-4c0d-4324-aab8-5369033ad9c4}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{87bccb2e-500e-460f-b47a-f840544b72a6}">
-		<property name="start">
-			<value>320</value>
-		</property>
-		<property name="length">
-			<value>229.62498866213153</value>
-		</property>
-		<relationship name="modulators">
-			<destination>{f3b53865-d009-433f-b91e-147489fa6c46}</destination>
-		</relationship>
-		<relationship name="audioFile">
-			<destination>{098d4857-4c0d-4324-aab8-5369033ad9c4}</destination>
-		</relationship>
-	</object>
 	<object class="TransitionSourceSound" id="{63a86e32-33e8-408a-a5c2-417545aecf9d}">
 		<property name="length">
 			<value>4</value>
@@ -278,6 +264,20 @@
 		</property>
 		<relationship name="fadeInCurve">
 			<destination>{f2ff9019-c859-4e7b-9740-abe1cee82517}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{5c64d142-44a1-4332-9b1d-ca60bf25ed9e}">
+		<property name="start">
+			<value>320</value>
+		</property>
+		<property name="length">
+			<value>189.61927437641722</value>
+		</property>
+		<property name="volume">
+			<value>-1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a9f661ae-2550-43cc-859e-83d11f0a00a9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{4ae71b18-03c4-41cd-a01a-2bfaa1c8675d}">
@@ -358,7 +358,7 @@
 			<value>320</value>
 		</property>
 		<property name="length">
-			<value>229.6249886621315</value>
+			<value>189.61927437641725</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8414c15f-5f16-4d86-8a5d-65a62ad02420}</destination>
@@ -409,7 +409,7 @@
 			<value>320</value>
 		</property>
 		<property name="length">
-			<value>229.6249886621315</value>
+			<value>189.61927437641725</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8414c15f-5f16-4d86-8a5d-65a62ad02420}</destination>
@@ -456,7 +456,7 @@
 			<value>320</value>
 		</property>
 		<property name="length">
-			<value>229.6249886621315</value>
+			<value>189.61927437641725</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8414c15f-5f16-4d86-8a5d-65a62ad02420}</destination>
@@ -539,23 +539,6 @@
 	<object class="MixerBusPanner" id="{3769e222-5fd3-4c3c-bdb9-0adba0a7afb0}" />
 	<object class="MixerBusFader" id="{e25637ef-c1fd-4d04-9b33-e391b8e10266}" />
 	<object class="ADSRModulator" id="{eeb620d3-602f-4321-8b64-7eb5ba84f032}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="attackShape">
-			<value>-0.271852672</value>
-		</property>
-		<property name="releaseTime">
-			<value>2000</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
-		</property>
-	</object>
-	<object class="ADSRModulator" id="{f3b53865-d009-433f-b91e-147489fa6c46}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
 		</property>
