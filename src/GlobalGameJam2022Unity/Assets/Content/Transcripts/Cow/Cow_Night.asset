@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Cow_Night
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: "<i>*sad*</i> Moo\u2026 "
+    Character: {fileID: 11400000, guid: 4713264b0a8271145afb7076a4786da9, type: 2}
+    Graphic: {fileID: 21300000, guid: d2738599af4822f47882df6bf9c5249e, type: 3}

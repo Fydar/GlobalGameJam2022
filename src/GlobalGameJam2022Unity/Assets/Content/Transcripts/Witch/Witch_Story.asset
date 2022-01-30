@@ -12,4 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Witch_Story
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: Edward! Come quick!
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: c454e080cba4005408ec67af82e7ffe6, type: 3}
+  - Body: "I saw it in my dreams.. An <b>ANCIENT EVIL</b>\u2026 a <b>MONSTER</b>
+      beyond <b>COMPREHENSION</b>."
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: 17ad45b4791a2484ab36f9e5830faf82, type: 3}
+  - Body: "Eh\u2026 what are you talking about Elise"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: Hush edWARD
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: c454e080cba4005408ec67af82e7ffe6, type: 3}
+  - Body: ...
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: c26ac8bc3d7b5bc42a3914fd2b00d92e, type: 3}
+  - Body: ...
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: aec6c221e7eeca94ea38696b30a69904, type: 3}
+  - Body: Do you hear that? Can you feel that?
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: aec6c221e7eeca94ea38696b30a69904, type: 3}
+  - Body: <b>D  A  N  G  E  R</b> is upon us Edward. I must go and prepare my protection
+      potion!
+    Character: {fileID: 11400000, guid: f2c0ff4fdc0a9cb40a77856f38e60a83, type: 2}
+    Graphic: {fileID: 21300000, guid: 190d12eacaf3791478340765cf8faa75, type: 3}
+  - Body: <i>*Sigh*</i> Oh, okay Elise. Goodluck.. I guess.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}

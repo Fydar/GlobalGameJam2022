@@ -12,4 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Opening_Monologue
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: Something feels different about today..
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: f6fac12d209b1b94b8e6f38005707873, type: 3}
+  - Body: The wind is sharper, the sun is uncomfortable against my fragile skin.
+      I know my time is coming slowly to an end.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: bc659d938a8cd97499dd5110f7d9f21d, type: 3}
+  - Body: '*Sigh*'
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: "I should speak to the villagers about my predicament\u2026 but\u2026"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: "I'm scared\u2026"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: "This world is cruel. Yet I have no choice but to participate in existence
+      for now.\r"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: c922e9a5ad6b2284f9b16fefb86ac2ad, type: 3}
+  - Body: I should try and distract myself by speaking to the others within the village
+      to see if there is anything I can do for my kind, generous, amazing best friends.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}

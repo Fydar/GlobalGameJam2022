@@ -12,4 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Closing_Monologue
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: "I \u2026 Am\u2026"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 689c7621fc72c7c44a7106eb6bccd91c, type: 3}
+  - Body: A MONSTER!
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 88cde2adf25075744bd82a75257857c5, type: 3}
+  - Body: 'How could I do this? '
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 9fd1083107bdb8649b4fb8d7d0c9bf9f, type: 3}
+  - Body: They were my friend.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 7a97279d58b055b41849a77ed494bbbb, type: 3}
+  - Body: They baby sat my cat.. They helped me plant my crops.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: edd2d984c8bfb614ca439033027fec0b, type: 3}
+  - Body: '*Crying* They even gifted me a handmade scarf.'
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 83df638360b81dd4c9d0ca4f6e92e61a, type: 3}
+  - Body: "This isn\u2019t me. I am not myself anymore. If I stay here I will just
+      continue to hurt those closest to me."
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 689c7621fc72c7c44a7106eb6bccd91c, type: 3}
+  - Body: Goodbye my friends.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 88cde2adf25075744bd82a75257857c5, type: 3}
+  - Body: I am sorry for the grief inflicted upon you from my heinous actions.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 4eab27bceb2fb4049bd4bc3fed75b8ed, type: 3}
+  - Body: May your future be full of peace and harmony, my dear village,
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 7a97279d58b055b41849a77ed494bbbb, type: 3}
+  - Body: BloodLust
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 46217299f4189a6418854acd6141a26d, type: 3}

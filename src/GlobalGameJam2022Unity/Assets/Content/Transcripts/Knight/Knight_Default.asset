@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Knight_Default
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: I shall save you from Stephans evil clutches my dear Alphea. We will be
+      together again soon.
+    Character: {fileID: 11400000, guid: 32f128bd5a637cf4aa9eef30891fc17f, type: 2}
+    Graphic: {fileID: 21300000, guid: 73cc4330c0bc733458a4458f260de52d, type: 3}

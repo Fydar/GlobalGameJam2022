@@ -12,4 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Old Lady_Story
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: Margaret! Is everything okay? You seem unwell.
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: Oh, hello my dear.
+    Character: {fileID: 11400000, guid: e566bc37fe1763b489425a629cd53680, type: 2}
+    Graphic: {fileID: 21300000, guid: 4e7789cf42f383348b875f84bfbc3191, type: 3}
+  - Body: "Unfortunately hon\u2019 I seem to have fallen quite ill today. Henry said
+      something about his stupid well but I am pretty sure it was the near rotten
+      cabbage I made soup out of last night."
+    Character: {fileID: 11400000, guid: e566bc37fe1763b489425a629cd53680, type: 2}
+    Graphic: {fileID: 21300000, guid: e66b9f5ed3218a94d92287046bef731c, type: 3}
+  - Body: '*Sigh*'
+    Character: {fileID: 11400000, guid: e566bc37fe1763b489425a629cd53680, type: 2}
+    Graphic: {fileID: 21300000, guid: cdc0e0616586c494b8280d810d4d59d7, type: 3}
+  - Body: But there he goes anyway, blaming himself and taking it out on that damned
+      well of his.
+    Character: {fileID: 11400000, guid: e566bc37fe1763b489425a629cd53680, type: 2}
+    Graphic: {fileID: 21300000, guid: e104d2b5fbba16e49acb979fe7946f5a, type: 3}
+  - Body: ' I think he feels guilty and just wants to help.'
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: I wish he would help by just delivering my flowers to our dear daughters
+      grave before the sun sets.. I will try and catch him after he has left that
+      stupid well alone.
+    Character: {fileID: 11400000, guid: e566bc37fe1763b489425a629cd53680, type: 2}
+    Graphic: {fileID: 21300000, guid: e66b9f5ed3218a94d92287046bef731c, type: 3}
+  - Body: Alright Margaret, let me know If I can get you anything to help you feel
+      better!
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: I shall my dear, I will see you later hon.
+    Character: {fileID: 11400000, guid: e566bc37fe1763b489425a629cd53680, type: 2}
+    Graphic: {fileID: 21300000, guid: 4e7789cf42f383348b875f84bfbc3191, type: 3}

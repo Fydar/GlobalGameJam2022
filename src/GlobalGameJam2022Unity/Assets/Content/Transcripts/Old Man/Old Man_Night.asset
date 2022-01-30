@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Old Man_Night
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: "*angry* This village has gone down the gutter! I don't think stayin\u2019
+      around is a good idea anymore.. This used to be a peaceful village!\r\n"
+    Character: {fileID: 11400000, guid: 4e22171f62ad63947ab6a921b55b53c3, type: 2}
+    Graphic: {fileID: 21300000, guid: e135c3c8eb9521044ba5f4c0904cf3f4, type: 3}

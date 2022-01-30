@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
   m_Name: Gravekeeper_Default
   m_EditorClassIdentifier: 
-  Content: []
+  Content:
+  - Body: "Dig\u2026 Dirt\u2026 Stupid\u2026 Friederich\u2026\r\n"
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: f02d6d6525687ad4bb955c65e392a2e9, type: 3}
