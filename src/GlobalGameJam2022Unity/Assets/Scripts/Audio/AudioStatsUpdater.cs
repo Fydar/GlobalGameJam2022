@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioStatsUpdater : MonoBehaviour
 {
     [SerializeField]
-    private TMPro.TextMeshProUGUI _bloodlustText;
+    private Text _bloodlustText;
 
     [SerializeField]
-    private TMPro.TextMeshProUGUI _timeOfDayText;
+    private Text _timeOfDayText;
     
     public float bloodlastValue = -1.0f;
     public enum TimeOfDayTypes { Day = 0, Night = 1 };
