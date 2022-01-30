@@ -136,16 +136,16 @@ public class GameplayController : MonoBehaviour
 			Player.enabled = true;
 
 
-			VillageNPCEngine killedCharacter = null;
-			float timeUntilBloodlust = Random.Range(TimeUntilBloodlustMinimum, TimeUntilBloodlustMaximum);
+			foreach (var npc in aliveCharacters)
+			{
+				npc.hasBeenTalkedTo = false;
+			}
 
-			// ## Daytime Gameplay
+			// ## Daytime Talking Gameplay
 			while (true)
 			{
 				Player.activatedInteractable = null;
 				yield return null;
-
-				timeUntilBloodlust -= Time.deltaTime;
 
 				if (Player.activatedInteractable is VillageNPCInteractable npcToTalkTo)
 				{
@@ -159,9 +159,19 @@ public class GameplayController : MonoBehaviour
 
 					DialogueCamera.LookAt = npcToTalkTo.Engine.Character.transform;
 
-					yield return StartCoroutine(
-						Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DefaultDialogue[
-							Random.Range(0, npcToTalkTo.Engine.Character.Personality.DefaultDialogue.Length)]));
+					if (npcToTalkTo.Engine.hasBeenTalkedTo)
+					{
+						yield return StartCoroutine(
+							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DayDefaultDialogue[
+								Random.Range(0, npcToTalkTo.Engine.Character.Personality.DayDefaultDialogue.Length)]));
+					}
+					else
+					{
+						npcToTalkTo.Engine.hasBeenTalkedTo = true;
+						yield return StartCoroutine(
+							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DayFirstDialogue[
+								Random.Range(0, npcToTalkTo.Engine.Character.Personality.DayFirstDialogue.Length)]));
+					}
 
 					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.DefaultState);
 					DialogueCamera.gameObject.SetActive(false);
@@ -169,60 +179,75 @@ public class GameplayController : MonoBehaviour
 				}
 				Player.activatedInteractable = null;
 
-				if (timeUntilBloodlust <= 0.0f)
+				bool isAll = true;
+				foreach (var npc in aliveCharacters)
 				{
-					RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 0);
-
-					Player.enabled = false;
-
-					foreach (var npc in aliveCharacters)
+					if (!npc.hasBeenTalkedTo)
 					{
-						npc.Effects.PlayExclamation();
+						isAll = false;
+						break;
 					}
-
-					yield return new WaitForSeconds(0.1f);
-
-					if (dayNumber == 1)
-					{
-						yield return StartCoroutine(
-							Dialogue.DialogueRoutine(IntroductionSequence));
-					}
-					else
-					{
-						yield return StartCoroutine(
-							Dialogue.DialogueRoutine(
-								AlternateBloodlustSequences[Random.Range(0, AlternateBloodlustSequences.Length)]));
-					}
-
-					Player.enabled = true;
-					RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 1);
-
-					foreach (var npc in aliveCharacters)
-					{
-						var fleeState = npc.GetComponent<FleeState>();
-						if (fleeState != null)
-						{
-							fleeState.RunState(Player.transform);
-						}
-					}
-
-					Player.activatedInteractable = null;
-					Player.IsBloodlusted = true;
-					Player.enabled = true;
-
-					// wait until a player has killed a character
-					// TODO: Add loose state if no characters are killed
-					while (true)
-					{
-						if (Player.activatedInteractable is VillageNPCInteractable interactableNpc)
-						{
-							killedCharacter = interactableNpc.Engine;
-							break;
-						}
-						yield return null;
-					}
+				}
+				if (isAll)
+				{
 					break;
 				}
+			}
+
+			// ## Bloodlust Sequence
+			float timeUntilBloodlust = Random.Range(TimeUntilBloodlustMinimum, TimeUntilBloodlustMaximum);
+			yield return new WaitForSeconds(timeUntilBloodlust);
+
+			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 0);
+
+			Player.enabled = false;
+
+			foreach (var npc in aliveCharacters)
+			{
+				npc.Effects.PlayExclamation();
+			}
+
+			yield return new WaitForSeconds(0.1f);
+
+			if (dayNumber == 1)
+			{
+				yield return StartCoroutine(
+					Dialogue.DialogueRoutine(IntroductionSequence));
+			}
+			else
+			{
+				yield return StartCoroutine(
+					Dialogue.DialogueRoutine(
+						AlternateBloodlustSequences[Random.Range(0, AlternateBloodlustSequences.Length)]));
+			}
+
+			Player.enabled = true;
+			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 1);
+
+			foreach (var npc in aliveCharacters)
+			{
+				var fleeState = npc.GetComponent<FleeState>();
+				if (fleeState != null)
+				{
+					fleeState.RunState(Player.transform);
+				}
+			}
+
+			Player.activatedInteractable = null;
+			Player.IsBloodlusted = true;
+			Player.enabled = true;
+
+
+			VillageNPCEngine killedCharacter = null;
+			// wait until a player has killed a character
+			while (true)
+			{
+				if (Player.activatedInteractable is VillageNPCInteractable interactableNpc)
+				{
+					killedCharacter = interactableNpc.Engine;
+					break;
+				}
+				yield return null;
 			}
 
 			Player.enabled = false;
@@ -259,22 +284,69 @@ public class GameplayController : MonoBehaviour
 
 			RuntimeManager.StudioSystem.setParameterByName("TimeOfDay", 1);
 
+			yield return new WaitForSeconds(2.0f);
+
 			foreach (float time in new TimedLoop(TransitionFromDaytimeSpeed))
 			{
 				TransitionFromDaytime.SetTime(1.0f - time);
 				yield return null;
 			}
 
-			// ## Nighttime Introduction
-			if (Player.activatedInteractable != null)
+			foreach (var npc in aliveCharacters)
 			{
-				while (true)
+				npc.hasBeenTalkedTo = false;
+			}
+
+			// ## Nighttime Talking Gameplay
+			while (true)
+			{
+				Player.activatedInteractable = null;
+				yield return null;
+
+				if (Player.activatedInteractable is VillageNPCInteractable npcToTalkTo)
 				{
-					if (Input.GetMouseButtonDown(0))
+					// Talk to a character
+					Player.enabled = false;
+					DialogueCamera.gameObject.SetActive(true);
+					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.GetComponent<DialogueState>());
+
+					DialogueTarget.SetTargets(new Transform[] { npcToTalkTo.Engine.Character.transform },
+						npcToTalkTo.transform.position.x < Player.Character.transform.position.x ? DialogueSide.Left : DialogueSide.Right);
+
+					DialogueCamera.LookAt = npcToTalkTo.Engine.Character.transform;
+
+					if (npcToTalkTo.Engine.hasBeenTalkedTo)
 					{
+						yield return StartCoroutine(
+							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DayDefaultDialogue[
+								Random.Range(0, npcToTalkTo.Engine.Character.Personality.DayDefaultDialogue.Length)]));
+					}
+					else
+					{
+						npcToTalkTo.Engine.hasBeenTalkedTo = true;
+						yield return StartCoroutine(
+							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DayFirstDialogue[
+								Random.Range(0, npcToTalkTo.Engine.Character.Personality.DayFirstDialogue.Length)]));
+					}
+
+					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.DefaultState);
+					DialogueCamera.gameObject.SetActive(false);
+					Player.enabled = true;
+				}
+				Player.activatedInteractable = null;
+
+				bool isAll = true;
+				foreach (var npc in aliveCharacters)
+				{
+					if (!npc.hasBeenTalkedTo)
+					{
+						isAll = false;
 						break;
 					}
-					yield return null;
+				}
+				if (isAll)
+				{
+					break;
 				}
 			}
 
@@ -292,6 +364,8 @@ public class GameplayController : MonoBehaviour
 				TransitionFromNighttime.SetTime(time);
 				yield return null;
 			}
+
+			SceneManager.LoadScene(0, LoadSceneMode.Single);
 		}
 	}
 

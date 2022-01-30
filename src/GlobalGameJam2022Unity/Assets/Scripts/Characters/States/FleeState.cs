@@ -4,6 +4,9 @@ using UnityEngine;
 public class FleeState : VillageNPCEngineState
 {
 	private Transform fleeingFrom;
+	private float previousSpeed = 0;
+
+	public float SpeedMultipler = 2.0f;
 
 	public void RunState(Transform fleeingFrom)
 	{
@@ -14,6 +17,9 @@ public class FleeState : VillageNPCEngineState
 
 	public override IEnumerator DoState()
 	{
+		previousSpeed = Engine.Character.Navigation.speed;
+		Engine.Character.Navigation.speed *= SpeedMultipler;
+
 		while (true)
 		{
 			if (fleeingFrom != null)
@@ -26,5 +32,10 @@ public class FleeState : VillageNPCEngineState
 				yield return new WaitForSeconds(0.25f);
 			}
 		}
+	}
+
+	public override void OnExit()
+	{
+		Engine.Character.Navigation.speed = previousSpeed;
 	}
 }
