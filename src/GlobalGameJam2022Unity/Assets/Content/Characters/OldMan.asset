@@ -15,10 +15,10 @@ MonoBehaviour:
   Name: Old Man
   DialogueGraphic: {fileID: 21300000, guid: c54d83d18c37cd941a51ca38802350fa, type: 3}
   DayFirstDialogue:
-  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  - {fileID: 11400000, guid: ef1617acca5838741b9bce5b984c68ee, type: 2}
   DayDefaultDialogue:
-  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  - {fileID: 11400000, guid: 5fb539fefd351e44394f6b2495d606a8, type: 2}
   NightDefaultDialogue:
-  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  - {fileID: 11400000, guid: 534b07c3bf0844c4f8358d9cea374d84, type: 2}
   RegretSpeech:
   - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
