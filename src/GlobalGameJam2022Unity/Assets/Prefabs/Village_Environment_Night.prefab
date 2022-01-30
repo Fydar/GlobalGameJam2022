@@ -45,12 +45,32 @@ PrefabInstance:
     - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
       propertyPath: m_Intensity
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 7.34684e-40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: 9e-43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 4.040762e-39
       objectReference: {fileID: 0}
     - target: {fileID: 7589718120701620272, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
