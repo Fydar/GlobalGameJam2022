@@ -26,6 +26,9 @@ public class AudioStatsUpdater : MonoBehaviour
 
         //print value
         switch (bloodlastValue){
+            case 2:
+                 _bloodlustText.text  = "Bloodlust: Killing Time!! ("+bloodlastValue+")";
+                break;
             case 1:
                  _bloodlustText.text  = "Bloodlust: Started! ("+bloodlastValue+")";
                 break;
