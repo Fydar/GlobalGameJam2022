@@ -981,8 +981,9 @@ MonoBehaviour:
   VillageVillagersSceneId: Village_Villagers
   DialogueCamera: {fileID: 1953901896}
   DialogueTarget: {fileID: 1285049383}
-  IntroductionSequence: {fileID: 11400000, guid: d55d1fd6b696e0b4897b9c252ebc8696,
+  IntroductionSequence: {fileID: 11400000, guid: 7cc791d0e48bfd24db8e51af296f8f4f,
     type: 2}
+  ClosingMonologue: {fileID: 11400000, guid: 9872b69de42eba140ad7a2c78e8dad4d, type: 2}
   FirstBloodlustSequence: {fileID: 11400000, guid: db8fe34b4701ca24e99f98d3ab7a0dd0,
     type: 2}
   AlternateBloodlustSequences:

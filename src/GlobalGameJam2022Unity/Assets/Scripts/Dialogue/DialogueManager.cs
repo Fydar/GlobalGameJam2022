@@ -144,6 +144,7 @@ public class DialogueManager : MonoBehaviour
 
 			messageSlot.Focused = true;
 			messageSlot.CurrentTalker = message.Character;
+			messageSlot.CharacterGraphic.sprite = message.Graphic;
 
 			yield return new WaitForSeconds(0.2f);
 
