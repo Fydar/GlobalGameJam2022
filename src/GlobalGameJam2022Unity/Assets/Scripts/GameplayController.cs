@@ -37,6 +37,9 @@ public class GameplayController : MonoBehaviour
 	public DialogueTranscript IntroductionSequence;
 
 	[Space]
+	public DialogueTranscript ClosingMonologue;
+
+	[Space]
 	public DialogueTranscript FirstBloodlustSequence;
 	public DialogueTranscript[] AlternateBloodlustSequences;
 
@@ -212,7 +215,7 @@ public class GameplayController : MonoBehaviour
 			if (dayNumber == 1)
 			{
 				yield return StartCoroutine(
-					Dialogue.DialogueRoutine(IntroductionSequence));
+					Dialogue.DialogueRoutine(FirstBloodlustSequence));
 			}
 			else
 			{
@@ -358,6 +361,15 @@ public class GameplayController : MonoBehaviour
 			// {
 			// 	yield return null;
 			// }
+
+
+			if (IntroductionSequence != null)
+			{
+				Dialogue.gameObject.SetActive(true);
+				yield return StartCoroutine(Dialogue.DialogueRoutine(IntroductionSequence));
+			}
+
+			yield return new WaitForSeconds(0.5f);
 
 			foreach (float time in new TimedLoop(TransitionFromNighttimeSpeed))
 			{
