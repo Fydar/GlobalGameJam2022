@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Gravekeeper
   DialogueGraphic: {fileID: 21300000, guid: 2f4d53c3f7d6eb747a62d4be59879551, type: 3}
-  Quests: []
-  DefaultDialogue: []
-  RegretSpeech: []
+  DayFirstDialogue:
+  - {fileID: 11400000, guid: 544959c6b794a38429692fe54a0a8b15, type: 2}
+  DayDefaultDialogue:
+  - {fileID: 11400000, guid: d3c02fa3f4aa3dc479b6032800d491cf, type: 2}
+  NightDefaultDialogue:
+  - {fileID: 11400000, guid: 63f3e2b1c57c9fb4092f02c9b6e6b1a1, type: 2}
+  RegretSpeech:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}

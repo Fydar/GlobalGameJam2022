@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
+  m_Name: Gravekeeper_Night
+  m_EditorClassIdentifier: 
+  Content:
+  - Body: "Didn't.. Deserve.. Poor\u2026 Soul.."
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: 2c17b639b984ea042b4f305caa8b4433, type: 3}

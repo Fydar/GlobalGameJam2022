@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
+  m_Name: Old Man_Story
+  m_EditorClassIdentifier: 
+  Content:
+  - Body: "\u2018Ello Eddy. How d\u2019ya do?"
+    Character: {fileID: 11400000, guid: 4e22171f62ad63947ab6a921b55b53c3, type: 2}
+    Graphic: {fileID: 21300000, guid: c54d83d18c37cd941a51ca38802350fa, type: 3}
+  - Body: "Morning Ol\u2019 Henry! I am very well thank you, How about yourself?"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: " I am quite troubled honestly, Ed. I just realized that my well is absolutely
+      filthy.\r"
+    Character: {fileID: 11400000, guid: 4e22171f62ad63947ab6a921b55b53c3, type: 2}
+    Graphic: {fileID: 21300000, guid: 754771f8cd2223c40b008b07da79dd5d, type: 3}
+  - Body: "Oh? What does that matter? It's just a bunch of stone\u2026"
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: "What matters boy is that it\u2019s made poor margaret sick! She is absolutely
+      distraught! She was hoping to make it to the cemetery tonight to deliver flowers
+      to our daughter\u2026"
+    Character: {fileID: 11400000, guid: 4e22171f62ad63947ab6a921b55b53c3, type: 2}
+    Graphic: {fileID: 21300000, guid: e135c3c8eb9521044ba5f4c0904cf3f4, type: 3}
+  - Body: "And it's because she drank murky water from my dirty well! I'm plannin\u2019
+      on making it up to her though so there's no worries!\r"
+    Character: {fileID: 11400000, guid: 4e22171f62ad63947ab6a921b55b53c3, type: 2}
+    Graphic: {fileID: 21300000, guid: 4c4e11d2ad9218248a970ca664249d22, type: 3}
+  - Body: Need any help with cleaning up the well Henry?
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: "Na\u2019 I got it lad! "
+    Character: {fileID: 11400000, guid: 4e22171f62ad63947ab6a921b55b53c3, type: 2}
+    Graphic: {fileID: 21300000, guid: c54d83d18c37cd941a51ca38802350fa, type: 3}

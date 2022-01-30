@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Edward
   DialogueGraphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
-  Quests: []
-  DefaultDialogue: []
-  RegretSpeech: []
+  DayFirstDialogue:
+  - {fileID: 11400000, guid: 7cc791d0e48bfd24db8e51af296f8f4f, type: 2}
+  DayDefaultDialogue:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
+  NightDefaultDialogue:
+  - {fileID: 11400000, guid: 2b58444d47ee02a4b8c7b4d14d7bbd14, type: 2}
+  RegretSpeech:
+  - {fileID: 11400000, guid: 9872b69de42eba140ad7a2c78e8dad4d, type: 2}

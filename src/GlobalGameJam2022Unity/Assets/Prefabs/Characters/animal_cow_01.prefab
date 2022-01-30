@@ -82,6 +82,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: animal_cow_01
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 26ff56a3d3be792489cfb92b6cd5ca7c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 86979a1d34ecbbf489c0bcd0e2c411b3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26ff56a3d3be792489cfb92b6cd5ca7c, type: 3}
 --- !u!95 &6068238782700010248 stripped

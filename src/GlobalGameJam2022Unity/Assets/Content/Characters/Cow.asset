@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Cow
   DialogueGraphic: {fileID: 21300000, guid: 9810ff0c507a59b40afff75cb9223686, type: 3}
-  Quests: []
-  DefaultDialogue:
+  DayFirstDialogue:
+  - {fileID: 11400000, guid: 3b218b4b3e3816545a84b572905eb936, type: 2}
+  DayDefaultDialogue:
   - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}
-  RegretSpeech: []
+  NightDefaultDialogue:
+  - {fileID: 11400000, guid: 5b89e6c3d4d622a40add0d80788d478b, type: 2}
+  RegretSpeech:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}

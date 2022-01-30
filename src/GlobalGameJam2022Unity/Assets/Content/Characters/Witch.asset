@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Witch
   DialogueGraphic: {fileID: 21300000, guid: 8ddacf13a239d054b8d24c318f8aaa69, type: 3}
-  Quests: []
-  DefaultDialogue:
+  DayFirstDialogue:
+  - {fileID: 11400000, guid: 0425896854910b348a5f656854f8b8a9, type: 2}
+  DayDefaultDialogue:
   - {fileID: 11400000, guid: 4841d5121624f154f8e7af79f23f2670, type: 2}
-  RegretSpeech: []
+  NightDefaultDialogue:
+  - {fileID: 11400000, guid: 3544c323634d5ea47a87c9a88b6519ad, type: 2}
+  RegretSpeech:
+  - {fileID: 11400000, guid: 17598b8f4073b324ab66b84df10eb744, type: 2}

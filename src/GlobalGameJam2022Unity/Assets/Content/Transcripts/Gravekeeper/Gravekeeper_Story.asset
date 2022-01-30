@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3adbcc90103e31b409f7ea94a814f8da, type: 3}
+  m_Name: Gravekeeper_Story
+  m_EditorClassIdentifier: 
+  Content:
+  - Body: '*Inaudible angry mumbling*'
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: 2f4d53c3f7d6eb747a62d4be59879551, type: 3}
+  - Body: Something wrong?
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: "Friederich\u2026 Won't\u2026"
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: 78c693f5b12312043be49102b60cbf36, type: 3}
+  - Body: "Friederich won\u2019t what? "
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: '*Grunts*'
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: 2c17b639b984ea042b4f305caa8b4433, type: 3}
+  - Body: "Won't\u2026 Leave\u2026 Alone\u2026"
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: c70e29098db0a234790b6a041228bf60, type: 3}
+  - Body: '*Sighs* '
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 8bef45494c3db4443bedb84579044a11, type: 3}
+  - Body: 'Are you and Friederich fighting again? '
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
+  - Body: '*Inaudible gargling*'
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: f02d6d6525687ad4bb955c65e392a2e9, type: 3}
+  - Body: "Need\u2026 Back\u2026 Work\u2026"
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: c70e29098db0a234790b6a041228bf60, type: 3}
+  - Body: "Dirt\u2026 Need\u2026 Dig\u2026"
+    Character: {fileID: 11400000, guid: bdafdb27fba0e904dae52ed66b211594, type: 2}
+    Graphic: {fileID: 21300000, guid: 2f4d53c3f7d6eb747a62d4be59879551, type: 3}
+  - Body: "Alright, I\u2019ll leave you be... I guess."
+    Character: {fileID: 11400000, guid: 22472c4e4f67bd64f8bd4f7da92c8e3f, type: 2}
+    Graphic: {fileID: 21300000, guid: 3924296de4525124da136ab1bc5fb903, type: 3}
