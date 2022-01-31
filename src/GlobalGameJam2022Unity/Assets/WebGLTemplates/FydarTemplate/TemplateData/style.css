@@ -100,6 +100,8 @@ div#loadingScreen {
     background-color: rgb(32, 34, 37);
     color: #eee;
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
 }
 
     .sidebar.sidebar-open {
@@ -109,6 +111,10 @@ div#loadingScreen {
         transform: translate(-360px, 0);
     }
 
+    .sidebar .sidebar-version {
+        color: #525252;
+        font-size: 12px;
+    }
 
 .sidebar h2 {
     text-align: center;
