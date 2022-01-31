@@ -1,0 +1,293 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background: #000000;
+}
+
+.fullscreen {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.game-container  {
+    background: transparent !important;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+}
+    .game-container.game-container-focused {
+        transform: translate(0, 0);
+    }
+
+    .game-container.game-container-unfocused {
+        transform: translate(180px, 0);
+    }
+
+    .game-container canvas {
+        width: 100%;
+        height: 100%;
+    }
+
+        .game-container canvas[data-pixel-art="true"] {
+            position: absolute;
+            image-rendering: optimizeSpeed;
+            image-rendering: -webkit-crisp-edges;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -o-crisp-edges;
+            image-rendering: crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: optimize-contrast;
+            image-rendering: pixelated;
+            -ms-interpolation-mode: nearest-neighbor;
+        }
+
+div#loadingScreen {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #12171A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s opacity;
+    pointer-events: none;
+}
+
+.loading-notice {
+    width: 460px;
+    font-size: 18px;
+    letter-spacing: 0.075em;
+    text-align: left;
+    color: #bbb;
+    margin: 1em 0;
+}
+
+.loading-bar-background {
+    width: 480px;
+    background-color: #40444b;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.loading-bar-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #7289da;
+    transition: 0.4s width;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 360px;
+    padding: 16px;
+    box-sizing: border-box;;
+    padding-top: 60px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.2s;
+    background-color: rgb(32, 34, 37);
+    color: #eee;
+    font-size: 13px;
+}
+
+    .sidebar.sidebar-open {
+        transform: translate(0px, 0);
+    }
+    .sidebar.sidebar-closed {
+        transform: translate(-360px, 0);
+    }
+
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .buttonArea {
+    position: absolute;
+    right: -256px;
+    width: 256px;
+    top: 15vh;
+    overflow: hidden;
+}
+
+#sidebar-btn-open {
+    display: block;
+    width: 96px;
+    height: 64px;
+    cursor: pointer;
+    padding: 0;
+    overflow: hidden;
+    outline: 0;
+    border-style: solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    transition: 0.2s border-radius,
+        0.2s transform;
+    transform: translate(-12px, 0);
+    border: solid 2px rgb(118, 118, 118);
+    border-left: 0;
+}
+
+#sidebar-btn-open:hover {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translate(0, 0);
+}
+
+#sidebar-btn-open img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sidebar-btn-fullscreen {
+    display: block;
+    margin: 10px;
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 7px;
+    outline: 0;
+    border: 0;
+    transform: none;
+}
+
+#sidebar-btn-fullscreen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.1s transform;
+}
+#sidebar-btn-fullscreen:hover img {
+    transform: scale(1.2);
+}
+
+.card {
+    border-radius: 6px;
+    transition: transform 0.15s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+
+    .card .card-image,
+    .card .card-header,
+    .card .card-body {
+        background-color: #2f3136;
+        border-bottom: solid 2px #222;
+    }
+
+    .card .card-image:first-child,
+    .card .card-header:first-child,
+    .card .card-body:first-child {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    .card .card-image:last-child,
+    .card .card-header:last-child,
+    .card .card-body:last-child {
+        border-bottom: none;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .card .card-image {
+        padding-top: 56.25%;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        border-bottom: none;
+    }
+
+    .card .card-image .imageHolder {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -2;
+        overflow: hidden;
+    }
+
+    .card .card-image .imageHolder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .card .card-header {
+        padding: 0.5rem 0.5rem;
+        flex-grow: 1;
+    }
+
+    .card .card-header h2 {
+        margin: 0.5rem 0;
+        font-weight: normal;
+    }
+
+    .card .card-body {
+        margin: 0;
+        padding: 8px 12px;
+    }
+
+    .card .card-title {
+        margin: 0;
+        padding: 0;
+        color: #666;
+        font-size: 1.4em;
+    }
+
+    .card .card-title a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    .card .card-subtitle {
+        margin: 0;
+        padding: 0;
+        color: #858585;
+        margin-top: 0.3rem;
+        font-size: 1.1rem;
+    }
+
+    .card .card-subtitle a {
+        text-decoration: none;
+        color: #858585;
+    }
+
+    .card .card-hover {
+        opacity: 0;
+        pointer-events: none;
+        top: 600px;
+        transition: opacity 0.2s ease-in-out, top 0s linear 2s;
+    }
+
+    .card:hover .card-hover {
+        opacity: 1;
+        top: 0;
+        transition: opacity 0.2s ease-in-out, top 0s linear 0s;
+    }
