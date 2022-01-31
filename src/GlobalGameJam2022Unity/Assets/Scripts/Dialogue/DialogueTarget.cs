@@ -32,7 +32,7 @@ public class DialogueTarget : MonoBehaviour
 
 			transform.position = new Vector3(
 				averagePosition.x - (dialogueSide == DialogueSide.Left ? pullSidewaysOffset : -pullSidewaysOffset),
-				0.0f,
+				averagePosition.y,
 				averagePosition.z - pullForwardOffset);
 		}
 	}

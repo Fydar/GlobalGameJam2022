@@ -38,6 +38,7 @@ public class GameplayController : MonoBehaviour
 
 	[Space]
 	public DialogueTranscript ClosingMonologue;
+	public Transform WalkToAtEnd;
 
 	[Space]
 	public DialogueTranscript FirstBloodlustSequence;
@@ -158,7 +159,7 @@ public class GameplayController : MonoBehaviour
 					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.GetComponent<DialogueState>());
 
 					DialogueTarget.SetTargets(new Transform[] { npcToTalkTo.Engine.Character.transform },
-						npcToTalkTo.transform.position.x < Player.Character.transform.position.x ? DialogueSide.Left : DialogueSide.Right);
+						npcToTalkTo.transform.position.x < Player.Character.transform.position.x ? DialogueSide.Right : DialogueSide.Left);
 
 					DialogueCamera.LookAt = npcToTalkTo.Engine.Character.transform;
 
@@ -232,7 +233,7 @@ public class GameplayController : MonoBehaviour
 				var fleeState = npc.GetComponent<FleeState>();
 				if (fleeState != null)
 				{
-					fleeState.RunState(Player.transform);
+					fleeState.RunState(Player.Character.transform);
 				}
 			}
 
@@ -256,19 +257,11 @@ public class GameplayController : MonoBehaviour
 			Player.enabled = false;
 			Player.IsBloodlusted = false;
 			KillSequence.CharacterGraphic.sprite = killedCharacter.Character.Personality.DialogueGraphic;
+			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 2);
 			KillSequence.gameObject.SetActive(true);
 			yield return new WaitForSeconds(5.0f);
 			KillSequence.gameObject.SetActive(false);
 
-			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", 2);
-
-			foreach (float time in new TimedLoop(TransitionAfterKillingSpeed))
-			{
-				TransitionAfterKilling.SetTime(time);
-				yield return null;
-			}
-
-			TransitionAfterKilling.SetTime(0.0f);
 			TransitionFromDaytime.SetTime(1.0f);
 
 			aliveCharacters.Remove(killedCharacter);
@@ -277,6 +270,13 @@ public class GameplayController : MonoBehaviour
 			RuntimeManager.StudioSystem.setParameterByName("Bloodlust", -1);
 
 			// # Nighttime
+			foreach (var npc in aliveCharacters)
+			{
+				npc.hasBeenTalkedTo = false;
+				SceneManager.MoveGameObjectToScene(npc.gameObject, loadedEnvironmentNight);
+				npc.DayReset();
+			}
+
 			Player.transform.SetParent(null);
 			SceneManager.MoveGameObjectToScene(Player.gameObject, loadedEnvironmentNight);
 			SceneManager.MoveGameObjectToScene(gameObject, loadedEnvironmentNight);
@@ -294,11 +294,7 @@ public class GameplayController : MonoBehaviour
 				TransitionFromDaytime.SetTime(1.0f - time);
 				yield return null;
 			}
-
-			foreach (var npc in aliveCharacters)
-			{
-				npc.hasBeenTalkedTo = false;
-			}
+			Player.enabled = true;
 
 			// ## Nighttime Talking Gameplay
 			while (true)
@@ -310,26 +306,26 @@ public class GameplayController : MonoBehaviour
 				{
 					// Talk to a character
 					Player.enabled = false;
-					DialogueCamera.gameObject.SetActive(true);
 					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.GetComponent<DialogueState>());
 
 					DialogueTarget.SetTargets(new Transform[] { npcToTalkTo.Engine.Character.transform },
-						npcToTalkTo.transform.position.x < Player.Character.transform.position.x ? DialogueSide.Left : DialogueSide.Right);
+						npcToTalkTo.transform.position.x < Player.Character.transform.position.x ? DialogueSide.Right : DialogueSide.Left);
 
+					DialogueCamera.gameObject.SetActive(true);
 					DialogueCamera.LookAt = npcToTalkTo.Engine.Character.transform;
 
 					if (npcToTalkTo.Engine.hasBeenTalkedTo)
 					{
 						yield return StartCoroutine(
-							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DayDefaultDialogue[
-								Random.Range(0, npcToTalkTo.Engine.Character.Personality.DayDefaultDialogue.Length)]));
+							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.NightDefaultDialogue[
+								Random.Range(0, npcToTalkTo.Engine.Character.Personality.NightDefaultDialogue.Length)]));
 					}
 					else
 					{
 						npcToTalkTo.Engine.hasBeenTalkedTo = true;
 						yield return StartCoroutine(
-							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.DayFirstDialogue[
-								Random.Range(0, npcToTalkTo.Engine.Character.Personality.DayFirstDialogue.Length)]));
+							Dialogue.DialogueRoutine(npcToTalkTo.Engine.Character.Personality.NightDefaultDialogue[
+								Random.Range(0, npcToTalkTo.Engine.Character.Personality.NightDefaultDialogue.Length)]));
 					}
 
 					npcToTalkTo.Engine.ChangeState(npcToTalkTo.Engine.DefaultState);
@@ -353,20 +349,22 @@ public class GameplayController : MonoBehaviour
 				}
 			}
 
-			Player.enabled = true;
+			// ## Nighttime Monologue
 
-			// ## Nighttime Gameplay
+			Player.enabled = false;
+			if (WalkToAtEnd != null)
+			{
+				Player.Character.SetPathInput(WalkToAtEnd.position, WalkToAtEnd.rotation);
+			}
+			DialogueCamera.gameObject.SetActive(true);
+			DialogueCamera.LookAt = Player.Character.transform;
+			DialogueTarget.SetTargets(new Transform[] { Player.Character.transform }, DialogueSide.Right);
+
 			yield return new WaitForSeconds(Random.Range(TimeUntilSunriseMinimum, TimeUntilSunriseMaximum));
-			// while (true)
-			// {
-			// 	yield return null;
-			// }
-
-
-			if (IntroductionSequence != null)
+			if (ClosingMonologue != null)
 			{
 				Dialogue.gameObject.SetActive(true);
-				yield return StartCoroutine(Dialogue.DialogueRoutine(IntroductionSequence));
+				yield return StartCoroutine(Dialogue.DialogueRoutine(ClosingMonologue));
 			}
 
 			yield return new WaitForSeconds(0.5f);

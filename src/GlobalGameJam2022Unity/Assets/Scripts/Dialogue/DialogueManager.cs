@@ -1,7 +1,6 @@
 ﻿using GlobalGameJam2022;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -95,6 +94,7 @@ public class DialogueManager : MonoBehaviour
 
 	public IEnumerator DialogueRoutine(DialogueTranscript script)
 	{
+		SubtitleText.text = "";
 		IsPlaying = true;
 		foreach (var slot in Slots)
 		{
@@ -139,12 +139,16 @@ public class DialogueManager : MonoBehaviour
 			}
 
 			SubtitleText.text = message.Body;
+
 			messageSlot.CharacterGraphic.sprite = message.Character.DialogueGraphic;
 			messageSlot.CharacterGraphic.enabled = true;
+			if (message.Graphic != null)
+			{
+				messageSlot.CharacterGraphic.sprite = message.Graphic;
+			}
 
 			messageSlot.Focused = true;
 			messageSlot.CurrentTalker = message.Character;
-			messageSlot.CharacterGraphic.sprite = message.Graphic;
 
 			yield return new WaitForSeconds(0.2f);
 
