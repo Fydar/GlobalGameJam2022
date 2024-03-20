@@ -5,19 +5,19 @@
 
 Interactive visual novel in a beutiful world.
 
-[![Snoot Cover](./img/Screenshot%2001-31-2022%2003-52-15.png)](https://fydar.github.io/GlobalGameJam2022/)
+[![Game cover art](./img/Screenshot%2001-31-2022%2003-52-15.png)](https://fydar.github.io/GlobalGameJam2022/)
 
 **Global Game Jam 2022**\
 **Theme**: "Duality"
 
-![Snoot Cover](./img/Screenshot%2001-30-2022%2017-29-16.png)
+![Screenshot of the ingame dialogue system](./img/Screenshot%2001-30-2022%2017-29-16.png)
 
 > *'The morality of a recently turned vampire comes into question when his thirst for life must be quenched. However, can he bring himself to rid the town of its villagers for his own selfish gain? It is up to you to solve this duality. Will you strive to support them or suck out their savoury souls and drink their bountiful blood?'*
 
 ## Credits
 
 **[Damian Kennett](https://globalgamejam.org/users/asumei):** Lead Designer and Narrative Designer\
-**[Anthony Marmont](https://github.com/Fydar):** Programmer\
+**[Fydar](https://github.com/Fydar):** Programmer\
 **[Caleb Phillips](https://lebbyfoxx.itch.io/):** Programmer\
 **[Sally Ann Chittenden](https://www.milminostudios.com/):** 2D Art and Character Design\
 **[Chad Nippard](https://globalgamejam.org/users/chid):** 3D Assets\

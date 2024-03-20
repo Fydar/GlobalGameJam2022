@@ -1,20 +1,21 @@
-src/GlobalGameJam2022Unity/[Ll]ibrary/
-src/GlobalGameJam2022Unity/[Tt]emp/
-src/GlobalGameJam2022Unity/[Bb]in/
-src/GlobalGameJam2022Unity/[Oo]bj/
-src/GlobalGameJam2022Unity/[Bb]uild/
-src/GlobalGameJam2022Unity/[Bb]uilds/
-src/GlobalGameJam2022Unity/[Ll]ogs/
-src/GlobalGameJam2022Unity/[Uu]ser[Ss]ettings/
-src/GlobalGameJam2022Unity/[Mm]emoryCaptures/
+src/BloodlustUnity/[Ll]ibrary/
+src/BloodlustUnity/[Tt]emp/
+src/BloodlustUnity/[Bb]in/
+src/BloodlustUnity/[Oo]bj/
+src/BloodlustUnity/[Bb]uild/
+src/BloodlustUnity/[Bb]uilds/
+src/BloodlustUnity/[Ll]ogs/
+src/BloodlustUnity/[Uu]ser[Ss]ettings/
+src/BloodlustUnity/[Mm]emoryCaptures/
 
-!src/GlobalGameJam2022Unity/[Aa]ssets/**/*.meta
-!src/GlobalGameJam2022Unity/[Aa]ssets/!*.obj
-src/GlobalGameJam2022Unity/[Aa]ssets/Plugins/Editor/JetBrains*
-src/GlobalGameJam2022Unity/[Aa]ssets/AssetStoreTools*
-src/GlobalGameJam2022Unity/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
-src/GlobalGameJam2022Unity/[Aa]ssets/[Ss]treamingAssets/aa.meta
-src/GlobalGameJam2022Unity/[Aa]ssets/[Ss]treamingAssets/aa/*
+!src/BloodlustUnity/[Aa]ssets/**/*.meta
+!src/BloodlustUnity/[Aa]ssets/!*.obj
+src/BloodlustUnity/[Aa]ssets/Plugins/Editor/JetBrains*
+src/BloodlustUnity/[Aa]ssets/AssetStoreTools*
+src/BloodlustUnity/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+src/BloodlustUnity/[Aa]ssets/[Ss]treamingAssets/aa.meta
+src/BloodlustUnity/[Aa]ssets/[Ss]treamingAssets/aa/*
+!src/BloodlustUnity/[Aa]ssets/**/*.dll
 
 .vs/
 .gradle/
@@ -54,21 +55,21 @@ crashlytics-build.properties
 
 #FMOD
 # Never ignore DLLs in the FMOD subfolder.
-!/[Aa]ssets/Plugins/FMOD/**/lib/*
+!src/BloodlustUnity/[Aa]ssets/Plugins/FMOD/**/lib/*
 
 # Don't ignore images and gizmos used by FMOD in the Unity Editor.
-!/[Aa]ssets/Gizmos/FMOD/*
-!/[Aa]ssets/Editor Default Resources/FMOD/*
+!src/BloodlustUnity/[Aa]ssets/Gizmos/FMOD/*
+!src/BloodlustUnity/[Aa]ssets/Editor Default Resources/FMOD/*
 					
 # Ignore the Cache folder since it is updated locally.
-/[Aa]ssets/Plugins/FMOD/Cache/*
+src/BloodlustUnity/[Aa]ssets/Plugins/FMOD/Cache/*
 					
 # Ignore bank files in the StreamingAssets folder.
-/[Aa]ssets/StreamingAssets/**/*.bank
-/[Aa]ssets/StreamingAssets/**/*.bank.meta
+src/BloodlustUnity/[Aa]ssets/StreamingAssets/**/*.bank
+src/BloodlustUnity/[Aa]ssets/StreamingAssets/**/*.bank.meta
 					
 # If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
 # Log files can be ignored.
 fmod_editor.log
-src/GlobalGameJam2022Unity/Assets/Plugins/FMOD/Cache/
+src/BloodlustUnity/Assets/Plugins/FMOD/Cache/
 .cache
