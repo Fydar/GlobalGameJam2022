@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: 9a6610d2e704f1648819acc8d7460285
+timeCreated: 1444629021
+licenseType: Store
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: -220
@@ -9,3 +10,10 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161631
+  packageName: FMOD for Unity
+  packageVersion: 2.02.23
+  assetPath: Assets/Plugins/FMOD/src/StudioEventEmitter.cs
+  uploadId: 695525

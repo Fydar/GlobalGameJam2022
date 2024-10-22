@@ -1,15 +1,11 @@
 fileFormatVersion: 2
 guid: f71c8f89be7646142baed6d482d5e89c
 PluginImporter:
-  externalObjects: {}
-  serializedVersion: 3
+  serializedVersion: 1
   iconMap: {}
   executionOrder: {}
-  defineConstraints: []
   isPreloaded: 0
   isOverridable: 0
-  isExplicitlyReferenced: 0
-  validateReferences: 1
   platformData:
     Android:
       enabled: 1
@@ -25,3 +21,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161631
+  packageName: FMOD for Unity
+  packageVersion: 2.02.23
+  assetPath: Assets/Plugins/FMOD/platforms/android/lib/armeabi-v7a/libfmod.so
+  uploadId: 695525

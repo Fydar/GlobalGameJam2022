@@ -1,7 +1,8 @@
 fileFormatVersion: 2
 guid: 5e5fb8ce07f0ce84b9d1852869527ea5
+timeCreated: 1444628977
+licenseType: Store
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 100
@@ -9,3 +10,10 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161631
+  packageName: FMOD for Unity
+  packageVersion: 2.02.23
+  assetPath: Assets/Plugins/FMOD/src/RuntimeManager.cs
+  uploadId: 695525

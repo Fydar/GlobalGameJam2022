@@ -1,15 +1,10 @@
 fileFormatVersion: 2
 guid: 1550e5c882b8c2445a1f14f8b1b23d41
 PluginImporter:
-  externalObjects: {}
-  serializedVersion: 3
+  serializedVersion: 1
   iconMap: {}
   executionOrder: {}
-  defineConstraints: []
   isPreloaded: 0
-  isOverridable: 0
-  isExplicitlyReferenced: 0
-  validateReferences: 1
   platformData:
     Android:
       enabled: 0
@@ -17,22 +12,47 @@ PluginImporter:
         CPU: AnyCPU
     Any:
       enabled: 0
-      settings:
-        Exclude Editor: 1
+      settings: {}
     Editor:
-      enabled: 0
+      enabled: 1
       settings:
         CPU: x86
         DefaultValueInitialized: true
         OS: Windows
+    Linux:
+      enabled: 1
+      settings:
+        CPU: x86
     Linux64:
       enabled: 1
       settings:
+        CPU: None
+    LinuxUniversal:
+      enabled: 1
+      settings:
         CPU: AnyCPU
+    OSXIntel:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+    OSXIntel64:
+      enabled: 1
+      settings:
+        CPU: None
     OSXUniversal:
       enabled: 1
       settings:
         CPU: AnyCPU
+    SamsungTV:
+      enabled: 0
+      settings:
+        STV_MODEL: STANDARD_13
+    WP8:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
     Win:
       enabled: 1
       settings:
@@ -56,3 +76,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161631
+  packageName: FMOD for Unity
+  packageVersion: 2.02.23
+  assetPath: Assets/Plugins/FMOD/platforms/win/lib/x86/fmodstudio.dll
+  uploadId: 695525

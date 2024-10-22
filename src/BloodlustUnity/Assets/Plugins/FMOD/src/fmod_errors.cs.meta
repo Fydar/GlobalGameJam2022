@@ -1,7 +1,6 @@
 fileFormatVersion: 2
 guid: 6e0992509b0077e479d2da05c8f52eb0
 MonoImporter:
-  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
@@ -9,3 +8,10 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161631
+  packageName: FMOD for Unity
+  packageVersion: 2.02.23
+  assetPath: Assets/Plugins/FMOD/src/fmod_errors.cs
+  uploadId: 695525

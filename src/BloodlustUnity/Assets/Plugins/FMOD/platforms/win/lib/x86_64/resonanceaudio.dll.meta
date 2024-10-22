@@ -1,15 +1,12 @@
 fileFormatVersion: 2
 guid: 4c8fb9b92ea2eae4f9112a3941c4f128
+timeCreated: 1511469552
+licenseType: Store
 PluginImporter:
-  externalObjects: {}
-  serializedVersion: 3
+  serializedVersion: 1
   iconMap: {}
   executionOrder: {}
-  defineConstraints: []
   isPreloaded: 0
-  isOverridable: 0
-  isExplicitlyReferenced: 0
-  validateReferences: 1
   platformData:
     Android:
       enabled: 0
@@ -24,10 +21,22 @@ PluginImporter:
         CPU: x86_64
         DefaultValueInitialized: true
         OS: AnyOS
+    Linux:
+      enabled: 0
+      settings:
+        CPU: x86
     Linux64:
       enabled: 0
       settings:
         CPU: x86_64
+    OSXIntel:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    OSXIntel64:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
     Win:
       enabled: 0
       settings:
@@ -39,3 +48,10 @@ PluginImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161631
+  packageName: FMOD for Unity
+  packageVersion: 2.02.23
+  assetPath: Assets/Plugins/FMOD/platforms/win/lib/x86_64/resonanceaudio.dll
+  uploadId: 695525
