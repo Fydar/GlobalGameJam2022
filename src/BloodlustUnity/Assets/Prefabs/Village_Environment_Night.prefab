@@ -5,16 +5,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1811230076432509401, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b54842d781ec6ca46a3ebb70162db061, type: 2}
     - target: {fileID: 2286004844098178609, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 2339337377016210745, guid: b51f698a7d6b85e4398053d1cd944093,
@@ -39,17 +40,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3349429797333598142, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 3407643732451748699, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 6390948104849639321, guid: b51f698a7d6b85e4398053d1cd944093,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 6921409159064991634, guid: b51f698a7d6b85e4398053d1cd944093,
@@ -163,4 +164,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b51f698a7d6b85e4398053d1cd944093, type: 3}

@@ -21,3 +21,4 @@ EditorBuildSettings:
     path: Assets/Scenes/Village_Villagers.unity
     guid: c2520a7ff67ed6d45a8151dc29efb8e3
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

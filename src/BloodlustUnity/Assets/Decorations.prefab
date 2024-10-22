@@ -23,6 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3665359433224567501}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.28774, y: 3.0542014, z: 20.11651}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -194,7 +195,6 @@ Transform:
   - {fileID: 3833272742561437982}
   - {fileID: 6246708988584130946}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3665359434211211984
 GameObject:
@@ -221,13 +221,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3665359434211211984}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -26.262741, y: -3.0692015, z: -16.15951}
   m_LocalScale: {x: 51.311996, y: 51.311996, z: 51.311996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3665359433224567500}
-  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3665359434211211949
 MeshFilter:
@@ -254,6 +254,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -284,6 +287,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -382,6 +386,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &3833272742561437982 stripped
 Transform:
@@ -394,6 +401,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -457,6 +465,9 @@ PrefabInstance:
       value: Grass1 (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831434469768 stripped
 Transform:
@@ -469,6 +480,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -532,6 +544,9 @@ PrefabInstance:
       value: Grass1 (93)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831427868750 stripped
 Transform:
@@ -544,6 +559,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -607,6 +623,9 @@ PrefabInstance:
       value: Grass1 (55)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831392596731 stripped
 Transform:
@@ -619,6 +638,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -702,6 +722,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612831346591666 stripped
 Transform:
@@ -714,6 +737,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -777,6 +801,9 @@ PrefabInstance:
       value: Grass1 (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831352237501 stripped
 Transform:
@@ -789,6 +816,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -852,6 +880,9 @@ PrefabInstance:
       value: Grass1 (58)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831345442985 stripped
 Transform:
@@ -864,6 +895,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -927,6 +959,9 @@ PrefabInstance:
       value: Grass1 (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831343889313 stripped
 Transform:
@@ -939,6 +974,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1002,6 +1038,9 @@ PrefabInstance:
       value: Grass1 (88)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831367650323 stripped
 Transform:
@@ -1014,6 +1053,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1082,6 +1122,9 @@ PrefabInstance:
       value: Grass1 (90)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831358630922 stripped
 Transform:
@@ -1094,6 +1137,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1157,6 +1201,9 @@ PrefabInstance:
       value: Grass1 (72)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831310482019 stripped
 Transform:
@@ -1169,6 +1216,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1232,6 +1280,9 @@ PrefabInstance:
       value: Grass1 (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831332945579 stripped
 Transform:
@@ -1244,6 +1295,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -1327,6 +1379,9 @@ PrefabInstance:
       value: prop_mushroom (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612831331956852 stripped
 Transform:
@@ -1339,6 +1394,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 21ec462c08e78bd43a6e15bfe41b1bf6,
@@ -1417,6 +1473,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ec462c08e78bd43a6e15bfe41b1bf6, type: 3}
 --- !u!4 &3843612831331739503 stripped
 Transform:
@@ -1429,6 +1488,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -1512,6 +1572,9 @@ PrefabInstance:
       value: prop_mushroom (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612831334006941 stripped
 Transform:
@@ -1524,6 +1587,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1592,6 +1656,9 @@ PrefabInstance:
       value: Grass1 (84)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831328466017 stripped
 Transform:
@@ -1604,6 +1671,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1667,6 +1735,9 @@ PrefabInstance:
       value: Grass1 (50)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831292063944 stripped
 Transform:
@@ -1679,6 +1750,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1747,6 +1819,9 @@ PrefabInstance:
       value: Grass1 (95)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831252692032 stripped
 Transform:
@@ -1759,6 +1834,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1822,6 +1898,9 @@ PrefabInstance:
       value: Grass1 (61)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831254384136 stripped
 Transform:
@@ -1834,6 +1913,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -1897,6 +1977,9 @@ PrefabInstance:
       value: Grass1 (48)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831213127757 stripped
 Transform:
@@ -1909,6 +1992,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -1992,6 +2076,9 @@ PrefabInstance:
       value: prop_carrot (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612831212319429 stripped
 Transform:
@@ -2004,6 +2091,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -2067,6 +2155,9 @@ PrefabInstance:
       value: Grass1 (82)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831210724250 stripped
 Transform:
@@ -2079,6 +2170,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -2142,6 +2234,9 @@ PrefabInstance:
       value: Grass1 (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831222193957 stripped
 Transform:
@@ -2154,6 +2249,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -2237,6 +2333,9 @@ PrefabInstance:
       value: prop_flower1 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612831222254813 stripped
 Transform:
@@ -2249,6 +2348,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -2332,6 +2432,9 @@ PrefabInstance:
       value: prop_carrot (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612831184701760 stripped
 Transform:
@@ -2344,6 +2447,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -2412,6 +2516,9 @@ PrefabInstance:
       value: Grass1 (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831187656075 stripped
 Transform:
@@ -2424,6 +2531,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -2487,6 +2595,9 @@ PrefabInstance:
       value: Grass1 (57)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831164955336 stripped
 Transform:
@@ -2499,6 +2610,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fa7544a75de7fb34093ca2cb69ae4f4c,
@@ -2572,6 +2684,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa7544a75de7fb34093ca2cb69ae4f4c, type: 3}
 --- !u!4 &3843612831167307284 stripped
 Transform:
@@ -2584,6 +2699,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4d3d66ca81728d445a7c864061f79cec,
@@ -2682,6 +2798,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d3d66ca81728d445a7c864061f79cec, type: 3}
 --- !u!4 &3843612831160885431 stripped
 Transform:
@@ -2694,6 +2813,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: de342937e915d9a4f87413625d4abd76,
@@ -2757,6 +2877,9 @@ PrefabInstance:
       value: prop_garlicstring (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de342937e915d9a4f87413625d4abd76, type: 3}
 --- !u!4 &3843612831157355237 stripped
 Transform:
@@ -2769,6 +2892,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -2832,6 +2956,9 @@ PrefabInstance:
       value: Grass1 (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831116234343 stripped
 Transform:
@@ -2844,6 +2971,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -2907,6 +3035,9 @@ PrefabInstance:
       value: Grass1 (83)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831110794986 stripped
 Transform:
@@ -2919,6 +3050,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 376c168a439358d488b3d41ce217c9a3,
@@ -3022,6 +3154,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376c168a439358d488b3d41ce217c9a3, type: 3}
 --- !u!4 &3843612831108632126 stripped
 Transform:
@@ -3034,6 +3169,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -3102,6 +3238,9 @@ PrefabInstance:
       value: Grass1 (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831129762056 stripped
 Transform:
@@ -3114,6 +3253,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -3212,6 +3352,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &3843612831123203074 stripped
 Transform:
@@ -3224,6 +3367,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -3307,6 +3451,9 @@ PrefabInstance:
       value: prop_carrot (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612831120192606 stripped
 Transform:
@@ -3319,6 +3466,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -3402,6 +3550,9 @@ PrefabInstance:
       value: prop_flower1 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612831086170863 stripped
 Transform:
@@ -3414,6 +3565,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -3512,6 +3664,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &3843612831093186511 stripped
 Transform:
@@ -3524,6 +3679,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -3587,6 +3743,9 @@ PrefabInstance:
       value: Grass1 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831044299044 stripped
 Transform:
@@ -3599,6 +3758,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -3667,6 +3827,9 @@ PrefabInstance:
       value: Grass1 (44)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831016467629 stripped
 Transform:
@@ -3679,6 +3842,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -3742,6 +3906,9 @@ PrefabInstance:
       value: Grass1 (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612831031640229 stripped
 Transform:
@@ -3754,6 +3921,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -3837,6 +4005,9 @@ PrefabInstance:
       value: prop_mushroom (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830977361989 stripped
 Transform:
@@ -3849,6 +4020,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d7a6ce087a937b2449fb86cae896f01f,
@@ -3933,10 +4105,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2803436535603912181, guid: d7a6ce087a937b2449fb86cae896f01f,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7a6ce087a937b2449fb86cae896f01f, type: 3}
 --- !u!4 &3843612830968953318 stripped
 Transform:
@@ -3949,6 +4124,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4012,6 +4188,9 @@ PrefabInstance:
       value: Grass1 (52)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830995266612 stripped
 Transform:
@@ -4024,6 +4203,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -4107,6 +4287,9 @@ PrefabInstance:
       value: prop_mushroom (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830988177274 stripped
 Transform:
@@ -4119,6 +4302,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4182,6 +4366,9 @@ PrefabInstance:
       value: Grass1 (46)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830949500865 stripped
 Transform:
@@ -4194,6 +4381,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4257,6 +4445,9 @@ PrefabInstance:
       value: Grass1 (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830947599646 stripped
 Transform:
@@ -4269,6 +4460,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4332,6 +4524,9 @@ PrefabInstance:
       value: Grass1 (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830938804429 stripped
 Transform:
@@ -4344,6 +4539,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4407,6 +4603,9 @@ PrefabInstance:
       value: Grass1 (67)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830956226763 stripped
 Transform:
@@ -4419,6 +4618,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -4498,7 +4698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bf1ee30c37ef32b4896de3089e54f123,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 919132149155446097, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -4507,6 +4707,9 @@ PrefabInstance:
       value: Lantern (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1ee30c37ef32b4896de3089e54f123, type: 3}
 --- !u!4 &3843612830879394141 stripped
 Transform:
@@ -4519,6 +4722,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4582,6 +4786,9 @@ PrefabInstance:
       value: Grass1 (54)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830875643839 stripped
 Transform:
@@ -4594,6 +4801,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -4677,6 +4885,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612830892544977 stripped
 Transform:
@@ -4689,6 +4900,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -4772,6 +4984,9 @@ PrefabInstance:
       value: prop_mushroom (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830832103055 stripped
 Transform:
@@ -4784,6 +4999,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -4847,6 +5063,9 @@ PrefabInstance:
       value: Grass1 (76)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830818357400 stripped
 Transform:
@@ -4859,6 +5078,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -4942,6 +5162,9 @@ PrefabInstance:
       value: prop_mushroom_spotted
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612830798327641 stripped
 Transform:
@@ -4954,6 +5177,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5017,6 +5241,9 @@ PrefabInstance:
       value: Grass1 (73)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830785629942 stripped
 Transform:
@@ -5029,6 +5256,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -5112,6 +5340,9 @@ PrefabInstance:
       value: prop_flower1 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612830744365154 stripped
 Transform:
@@ -5124,6 +5355,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5187,6 +5419,9 @@ PrefabInstance:
       value: Grass1 (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830754058157 stripped
 Transform:
@@ -5199,6 +5434,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5262,6 +5498,9 @@ PrefabInstance:
       value: Grass1 (68)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830753544739 stripped
 Transform:
@@ -5274,6 +5513,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5337,6 +5577,9 @@ PrefabInstance:
       value: Grass1 (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830681514570 stripped
 Transform:
@@ -5349,6 +5592,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5412,6 +5656,9 @@ PrefabInstance:
       value: Grass1 (60)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830697593645 stripped
 Transform:
@@ -5424,6 +5671,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5487,6 +5735,9 @@ PrefabInstance:
       value: Grass1 (59)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830697647353 stripped
 Transform:
@@ -5499,6 +5750,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -5582,6 +5834,9 @@ PrefabInstance:
       value: prop_carrot (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612830689840145 stripped
 Transform:
@@ -5594,6 +5849,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e92923246410d0c48b97da68efb6bd08,
@@ -5677,6 +5933,9 @@ PrefabInstance:
       value: GarlicWreath
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e92923246410d0c48b97da68efb6bd08, type: 3}
 --- !u!4 &3843612830643687083 stripped
 Transform:
@@ -5689,6 +5948,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5752,6 +6012,9 @@ PrefabInstance:
       value: Grass1 (78)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830634675797 stripped
 Transform:
@@ -5764,6 +6027,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5827,6 +6091,9 @@ PrefabInstance:
       value: Grass1 (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830634831170 stripped
 Transform:
@@ -5839,6 +6106,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5902,6 +6170,9 @@ PrefabInstance:
       value: Grass1 (81)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830615138185 stripped
 Transform:
@@ -5914,6 +6185,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -5977,6 +6249,9 @@ PrefabInstance:
       value: Grass1 (53)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830626313176 stripped
 Transform:
@@ -5989,6 +6264,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -6072,6 +6348,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612830625710571 stripped
 Transform:
@@ -6084,6 +6363,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d3834fb1f41c00d4199f7b829cd3cfff,
@@ -6157,6 +6437,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3834fb1f41c00d4199f7b829cd3cfff, type: 3}
 --- !u!4 &3843612830628740056 stripped
 Transform:
@@ -6169,6 +6452,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -6252,6 +6536,9 @@ PrefabInstance:
       value: prop_carrot (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612830571897499 stripped
 Transform:
@@ -6264,6 +6551,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6327,6 +6615,9 @@ PrefabInstance:
       value: Grass1 (51)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830591780169 stripped
 Transform:
@@ -6339,6 +6630,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6402,6 +6694,9 @@ PrefabInstance:
       value: Grass1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830586753307 stripped
 Transform:
@@ -6414,6 +6709,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -6497,6 +6793,9 @@ PrefabInstance:
       value: prop_mushroom (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830534668973 stripped
 Transform:
@@ -6509,6 +6808,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6572,6 +6872,9 @@ PrefabInstance:
       value: Grass1 (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830532539291 stripped
 Transform:
@@ -6584,6 +6887,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6652,6 +6956,9 @@ PrefabInstance:
       value: Grass1 (62)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830558015935 stripped
 Transform:
@@ -6664,6 +6971,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6727,6 +7035,9 @@ PrefabInstance:
       value: Grass1 (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830564146787 stripped
 Transform:
@@ -6739,6 +7050,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6802,6 +7114,9 @@ PrefabInstance:
       value: Grass1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830563258823 stripped
 Transform:
@@ -6814,6 +7129,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6877,6 +7193,9 @@ PrefabInstance:
       value: Grass1 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830562761959 stripped
 Transform:
@@ -6889,6 +7208,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -6957,6 +7277,9 @@ PrefabInstance:
       value: Grass1 (69)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830444843492 stripped
 Transform:
@@ -6969,6 +7292,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7032,6 +7356,9 @@ PrefabInstance:
       value: Grass1 (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830407761243 stripped
 Transform:
@@ -7044,6 +7371,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -7127,6 +7455,9 @@ PrefabInstance:
       value: prop_carrot (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612830413393890 stripped
 Transform:
@@ -7139,6 +7470,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -7222,6 +7554,9 @@ PrefabInstance:
       value: prop_carrot (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612830424431522 stripped
 Transform:
@@ -7234,6 +7569,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 820cd2c753ced9b4bbbeec52249c565e,
@@ -7317,6 +7653,9 @@ PrefabInstance:
       value: prop_frog
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 820cd2c753ced9b4bbbeec52249c565e, type: 3}
 --- !u!4 &3843612830423813351 stripped
 Transform:
@@ -7329,6 +7668,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7407,6 +7747,9 @@ PrefabInstance:
       value: Grass1 (85)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830415115810 stripped
 Transform:
@@ -7419,6 +7762,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7482,6 +7826,9 @@ PrefabInstance:
       value: Grass1 (70)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830373057588 stripped
 Transform:
@@ -7494,6 +7841,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7557,6 +7905,9 @@ PrefabInstance:
       value: Grass1 (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830396655264 stripped
 Transform:
@@ -7569,6 +7920,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -7652,6 +8004,9 @@ PrefabInstance:
       value: prop_carrot (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612830349870985 stripped
 Transform:
@@ -7664,6 +8019,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7727,6 +8083,9 @@ PrefabInstance:
       value: Grass1 (87)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830323181441 stripped
 Transform:
@@ -7739,6 +8098,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7802,6 +8162,9 @@ PrefabInstance:
       value: Grass1 (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830295413195 stripped
 Transform:
@@ -7814,6 +8177,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7877,6 +8241,9 @@ PrefabInstance:
       value: Grass1 (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830284277194 stripped
 Transform:
@@ -7889,6 +8256,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -7952,6 +8320,9 @@ PrefabInstance:
       value: Grass1 (77)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830281669206 stripped
 Transform:
@@ -7964,6 +8335,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -8027,6 +8399,9 @@ PrefabInstance:
       value: Grass1 (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830286613363 stripped
 Transform:
@@ -8039,6 +8414,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -8102,6 +8478,9 @@ PrefabInstance:
       value: Grass1 (65)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830253566836 stripped
 Transform:
@@ -8114,6 +8493,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -8197,6 +8577,9 @@ PrefabInstance:
       value: prop_carrot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612830213053014 stripped
 Transform:
@@ -8209,6 +8592,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -8272,6 +8656,9 @@ PrefabInstance:
       value: Grass1 (92)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830222971236 stripped
 Transform:
@@ -8284,6 +8671,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -8367,6 +8755,9 @@ PrefabInstance:
       value: prop_flower1 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612830226990705 stripped
 Transform:
@@ -8379,6 +8770,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -8462,6 +8854,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612830216876855 stripped
 Transform:
@@ -8474,6 +8869,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -8557,6 +8953,9 @@ PrefabInstance:
       value: prop_mushroom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830218244896 stripped
 Transform:
@@ -8569,6 +8968,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c7e23cafa88723e4fb35fb649dc315c9,
@@ -8637,6 +9037,9 @@ PrefabInstance:
       value: prop_haybale
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e23cafa88723e4fb35fb649dc315c9, type: 3}
 --- !u!4 &3843612830163358514 stripped
 Transform:
@@ -8649,6 +9052,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -8712,6 +9116,9 @@ PrefabInstance:
       value: Grass1 (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830192070540 stripped
 Transform:
@@ -8724,6 +9131,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -8787,6 +9195,9 @@ PrefabInstance:
       value: Grass1 (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830196255196 stripped
 Transform:
@@ -8799,6 +9210,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -8882,6 +9294,9 @@ PrefabInstance:
       value: prop_mushroom (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830187874412 stripped
 Transform:
@@ -8894,6 +9309,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -8957,6 +9373,9 @@ PrefabInstance:
       value: Grass1 (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830096408800 stripped
 Transform:
@@ -8969,6 +9388,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -9067,6 +9487,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &3843612830113362736 stripped
 Transform:
@@ -9079,6 +9502,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -9142,6 +9566,9 @@ PrefabInstance:
       value: Grass1 (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830062412232 stripped
 Transform:
@@ -9154,6 +9581,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -9217,6 +9645,9 @@ PrefabInstance:
       value: Grass1 (66)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830039639920 stripped
 Transform:
@@ -9229,6 +9660,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -9312,6 +9744,9 @@ PrefabInstance:
       value: prop_mushroom (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612830038313404 stripped
 Transform:
@@ -9324,6 +9759,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -9397,6 +9833,9 @@ PrefabInstance:
       value: Grass1 (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612830019273657 stripped
 Transform:
@@ -9409,6 +9848,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -9507,6 +9947,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &3843612830017444061 stripped
 Transform:
@@ -9519,6 +9962,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -9602,6 +10046,9 @@ PrefabInstance:
       value: prop_carrot (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612829928631897 stripped
 Transform:
@@ -9614,6 +10061,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: de342937e915d9a4f87413625d4abd76,
@@ -9677,6 +10125,9 @@ PrefabInstance:
       value: prop_garlicstring (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de342937e915d9a4f87413625d4abd76, type: 3}
 --- !u!4 &3843612829933864164 stripped
 Transform:
@@ -9689,6 +10140,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -9752,6 +10204,9 @@ PrefabInstance:
       value: Grass1 (86)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829933006457 stripped
 Transform:
@@ -9764,6 +10219,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2a0d55b422e716e45af3083d3e41594e,
@@ -9847,6 +10303,9 @@ PrefabInstance:
       value: prop_treedead
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a0d55b422e716e45af3083d3e41594e, type: 3}
 --- !u!4 &3843612829959614904 stripped
 Transform:
@@ -9859,6 +10318,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -9922,6 +10382,9 @@ PrefabInstance:
       value: Grass1 (80)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829950751264 stripped
 Transform:
@@ -9934,6 +10397,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -10017,6 +10481,9 @@ PrefabInstance:
       value: prop_flower1 (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612829898808292 stripped
 Transform:
@@ -10029,6 +10496,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10092,6 +10560,9 @@ PrefabInstance:
       value: Grass1 (91)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829877401810 stripped
 Transform:
@@ -10104,6 +10575,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0480a98c76ca9ef4fb0892245fe2459a,
@@ -10172,6 +10644,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0480a98c76ca9ef4fb0892245fe2459a, type: 3}
 --- !u!4 &3843612829893142272 stripped
 Transform:
@@ -10184,6 +10659,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10247,6 +10723,9 @@ PrefabInstance:
       value: Grass1 (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829884931906 stripped
 Transform:
@@ -10259,6 +10738,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -10342,6 +10822,9 @@ PrefabInstance:
       value: prop_carrot (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612829883579874 stripped
 Transform:
@@ -10354,6 +10837,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10417,6 +10901,9 @@ PrefabInstance:
       value: Grass1 (74)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829883051710 stripped
 Transform:
@@ -10429,6 +10916,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10492,6 +10980,9 @@ PrefabInstance:
       value: Grass1 (64)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829841233942 stripped
 Transform:
@@ -10504,6 +10995,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: de342937e915d9a4f87413625d4abd76,
@@ -10567,6 +11059,9 @@ PrefabInstance:
       value: prop_garlicstring
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de342937e915d9a4f87413625d4abd76, type: 3}
 --- !u!4 &3843612829830965696 stripped
 Transform:
@@ -10579,6 +11074,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0480a98c76ca9ef4fb0892245fe2459a,
@@ -10647,6 +11143,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0480a98c76ca9ef4fb0892245fe2459a, type: 3}
 --- !u!4 &3843612829855975721 stripped
 Transform:
@@ -10659,6 +11158,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10722,6 +11222,9 @@ PrefabInstance:
       value: Grass1 (31)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829804672844 stripped
 Transform:
@@ -10734,6 +11237,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10797,6 +11301,9 @@ PrefabInstance:
       value: Grass1 (63)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829822916737 stripped
 Transform:
@@ -10809,6 +11316,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10872,6 +11380,9 @@ PrefabInstance:
       value: Grass1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829767342199 stripped
 Transform:
@@ -10884,6 +11395,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -10962,6 +11474,9 @@ PrefabInstance:
       value: Grass1 (94)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829793291386 stripped
 Transform:
@@ -10974,6 +11489,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11037,6 +11553,9 @@ PrefabInstance:
       value: Grass1 (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829737910981 stripped
 Transform:
@@ -11049,6 +11568,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11112,6 +11632,9 @@ PrefabInstance:
       value: Grass1 (47)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829727455303 stripped
 Transform:
@@ -11124,6 +11647,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11187,6 +11711,9 @@ PrefabInstance:
       value: Grass1 (71)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829744380161 stripped
 Transform:
@@ -11199,6 +11726,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11262,6 +11790,9 @@ PrefabInstance:
       value: Grass1 (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829712956881 stripped
 Transform:
@@ -11274,6 +11805,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11337,6 +11869,9 @@ PrefabInstance:
       value: Grass1 (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829716074575 stripped
 Transform:
@@ -11349,6 +11884,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -11432,6 +11968,9 @@ PrefabInstance:
       value: prop_carrot (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612829674875309 stripped
 Transform:
@@ -11444,6 +11983,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11517,6 +12057,9 @@ PrefabInstance:
       value: Grass1 (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829681047507 stripped
 Transform:
@@ -11529,6 +12072,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -11627,6 +12171,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &3843612829657443094 stripped
 Transform:
@@ -11639,6 +12186,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11702,6 +12250,9 @@ PrefabInstance:
       value: Grass1 (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829643971016 stripped
 Transform:
@@ -11714,6 +12265,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2555194e7e8d86439fe1ae07a31c82a,
@@ -11797,6 +12349,9 @@ PrefabInstance:
       value: prop_carrot (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2555194e7e8d86439fe1ae07a31c82a, type: 3}
 --- !u!4 &3843612829608409827 stripped
 Transform:
@@ -11809,6 +12364,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -11888,7 +12444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bf1ee30c37ef32b4896de3089e54f123,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 919132149155446097, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -11897,6 +12453,9 @@ PrefabInstance:
       value: Lantern
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1ee30c37ef32b4896de3089e54f123, type: 3}
 --- !u!4 &3843612829621457130 stripped
 Transform:
@@ -11909,6 +12468,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -11972,6 +12532,9 @@ PrefabInstance:
       value: Grass1 (34)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829560634527 stripped
 Transform:
@@ -11984,6 +12547,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -12067,6 +12631,9 @@ PrefabInstance:
       value: prop_mushroom (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612829559938233 stripped
 Transform:
@@ -12079,6 +12646,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -12162,6 +12730,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612829582656365 stripped
 Transform:
@@ -12174,6 +12745,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -12237,6 +12809,9 @@ PrefabInstance:
       value: Grass1 (56)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829581146604 stripped
 Transform:
@@ -12249,6 +12824,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -12332,6 +12908,9 @@ PrefabInstance:
       value: prop_flower1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612829580478548 stripped
 Transform:
@@ -12344,6 +12923,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -12427,6 +13007,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612829546154920 stripped
 Transform:
@@ -12439,6 +13022,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -12518,7 +13102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bf1ee30c37ef32b4896de3089e54f123,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 919132149155446097, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -12527,6 +13111,9 @@ PrefabInstance:
       value: Lantern (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1ee30c37ef32b4896de3089e54f123, type: 3}
 --- !u!4 &3843612829500730512 stripped
 Transform:
@@ -12539,6 +13126,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -12622,6 +13210,9 @@ PrefabInstance:
       value: prop_mushroom (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612829507536139 stripped
 Transform:
@@ -12634,6 +13225,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -12697,6 +13289,9 @@ PrefabInstance:
       value: Grass1 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829504863536 stripped
 Transform:
@@ -12709,6 +13304,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -12772,6 +13368,9 @@ PrefabInstance:
       value: Grass1 (45)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829522544701 stripped
 Transform:
@@ -12784,6 +13383,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -12847,6 +13447,9 @@ PrefabInstance:
       value: Grass1 (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829516488769 stripped
 Transform:
@@ -12859,6 +13462,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -12922,6 +13526,9 @@ PrefabInstance:
       value: Grass1 (79)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829470039662 stripped
 Transform:
@@ -12934,6 +13541,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -13002,6 +13610,9 @@ PrefabInstance:
       value: Grass1 (89)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829472577200 stripped
 Transform:
@@ -13014,6 +13625,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 37ffd0f95220aa54b9b2c3b0489ffeca,
@@ -13097,6 +13709,9 @@ PrefabInstance:
       value: prop_flower1 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37ffd0f95220aa54b9b2c3b0489ffeca, type: 3}
 --- !u!4 &3843612829487306478 stripped
 Transform:
@@ -13109,6 +13724,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ed66b53b217150d48bfadd62730566c8,
@@ -13192,6 +13808,9 @@ PrefabInstance:
       value: prop_mushroom (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed66b53b217150d48bfadd62730566c8, type: 3}
 --- !u!4 &3843612829440994792 stripped
 Transform:
@@ -13204,6 +13823,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -13267,6 +13887,9 @@ PrefabInstance:
       value: Grass1 (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829428947405 stripped
 Transform:
@@ -13279,6 +13902,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 376c168a439358d488b3d41ce217c9a3,
@@ -13382,6 +14006,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 376c168a439358d488b3d41ce217c9a3, type: 3}
 --- !u!4 &3843612829457924568 stripped
 Transform:
@@ -13394,6 +14021,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -13457,6 +14085,9 @@ PrefabInstance:
       value: Grass1 (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829402735119 stripped
 Transform:
@@ -13469,6 +14100,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -13532,6 +14164,9 @@ PrefabInstance:
       value: Grass1 (75)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829392248137 stripped
 Transform:
@@ -13544,6 +14179,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -13607,6 +14243,9 @@ PrefabInstance:
       value: Grass1 (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829383148571 stripped
 Transform:
@@ -13619,6 +14258,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 47b251f4ae2cc15418da4e0b43abb6c9,
@@ -13687,6 +14327,9 @@ PrefabInstance:
       value: Grass1 (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47b251f4ae2cc15418da4e0b43abb6c9, type: 3}
 --- !u!4 &3843612829335474423 stripped
 Transform:
@@ -13699,6 +14342,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -13778,7 +14422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: bf1ee30c37ef32b4896de3089e54f123,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: f43004bbe893284438646c82586850a8, type: 2}
     - target: {fileID: 919132149155446097, guid: bf1ee30c37ef32b4896de3089e54f123,
@@ -13787,6 +14431,9 @@ PrefabInstance:
       value: Lantern (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf1ee30c37ef32b4896de3089e54f123, type: 3}
 --- !u!4 &3843612829345192663 stripped
 Transform:
@@ -13799,6 +14446,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37,
@@ -13882,6 +14530,9 @@ PrefabInstance:
       value: prop_mushroom_spotted (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbacd03d6ae5d7f4ab09ba5c5b0d1e37, type: 3}
 --- !u!4 &3843612829303897006 stripped
 Transform:
@@ -13894,6 +14545,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -13992,6 +14644,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &6246708988584130946 stripped
 Transform:
@@ -14004,6 +14659,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3665359433224567500}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 4c2505f2f40a9a64aae55a4be7792e2b,
@@ -14102,6 +14758,9 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c2505f2f40a9a64aae55a4be7792e2b, type: 3}
 --- !u!4 &6911389284233988719 stripped
 Transform:
